@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#product"
-            className="px-8 py-3 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white rounded-lg font-medium hover:from-[#764ba2] hover:to-[#667eea] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-white/10"
+            className="px-8 py-3 glass-card text-white rounded-lg font-medium hover:border-white/12 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Learn More
           </a>
