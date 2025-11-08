@@ -13,16 +13,16 @@ When setting up your project on Vercel:
 
 1. **Import your GitHub repository** to Vercel
 2. **Framework Preset**: Select **"Next.js"** (should auto-detect)
-3. **Root Directory**: Set to `website`
+3. **Root Directory**: Leave empty (project is at root)
 4. **Build Command**: `yarn build` (or leave default - Vercel will auto-detect)
 5. **Output Directory**: `.next` (or leave default - Vercel will auto-detect)
 6. **Install Command**: `yarn install` (or leave default)
 
 ## Configuration Files
 
-- `vercel.json` - Vercel configuration (root directory)
-- `website/next.config.mjs` - Next.js configuration
-- `website/package.json` - Dependencies and scripts
+- `vercel.json` - Vercel configuration (minimal - auto-detects Next.js)
+- `next.config.mjs` - Next.js configuration
+- `package.json` - Dependencies and scripts
 
 ## Automatic Configuration
 
@@ -39,7 +39,7 @@ Vercel will automatically:
 If Vercel doesn't auto-detect, use these settings:
 
 - **Framework Preset**: Next.js
-- **Root Directory**: `website`
+- **Root Directory**: (leave empty - project is at root)
 - **Build Command**: `yarn build`
 - **Output Directory**: `.next`
 - **Install Command**: `yarn install`

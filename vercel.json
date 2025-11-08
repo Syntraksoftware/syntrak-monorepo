@@ -1,8 +1,5 @@
 {
-  "buildCommand": "cd website && yarn build",
-  "outputDirectory": "website/.next",
-  "framework": "nextjs",
-  "installCommand": "cd website && yarn install"
+  "framework": "nextjs"
 }
 
 
