@@ -4,52 +4,68 @@ import { useState, useEffect } from "react";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const navItems = [
     { label: "About", href: "#about" },
     { label: "Product", href: "#product" },
     { label: "Technology", href: "#technology" },
     { label: "Features", href: "#features" },
-    { label: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "glass-nav border-b border-white/8"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <a
-            href="#home"
-            className="text-xl font-semibold text-white hover:text-[#a1a1aa] transition-colors"
-          >
-            Syntrak
-          </a>
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium text-[#a1a1aa] hover:text-white transition-colors relative group"
-              >
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      <div className="nav-container">
+        <a href="#home" className="nav-logo" onClick={closeMenu}>
+          <span className="text-xl font-semibold">Syntrak</span>
+        </a>
+
+        <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
+          {navItems.map((item) => (
+            <li key={item.href} className="nav-item">
+              <a href={item.href} className="nav-link" onClick={closeMenu}>
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
-            ))}
-          </div>
-          <button className="md:hidden text-white">
+            </li>
+          ))}
+        </ul>
+
+        <a href="#contact" className="nav-contact-btn" onClick={closeMenu}>
+          Contact
+        </a>
+
+        <button className="nav-toggle" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
             <svg
               className="w-6 h-6"
               fill="none"
@@ -63,8 +79,8 @@ export default function Navigation() {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </button>
-        </div>
+          )}
+        </button>
       </div>
     </nav>
   );
