@@ -2,27 +2,19 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Fix for deploymentId/buildId errors
-  generateBuildId: async () => {
-    return (
-      process.env.BUILD_ID ||
-      process.env.NETLIFY_BUILD_ID ||
-      `build-${Date.now()}`
-    );
-  },
-  // Ensure we don't try to access Vercel-specific runtime config
+  // Vercel handles build ID automatically
   experimental: {
     serverActions: {
       bodySizeLimit: "2mb",
     },
   },
-  // Disable telemetry to avoid runtime config issues
+  // Disable telemetry if desired
   telemetry: false,
-  // Disable image optimization if causing issues
+  // Image optimization (enabled by default on Vercel)
   images: {
     unoptimized: false,
   },
-  // Explicitly disable Vercel-specific features
+  // Disable powered by header
   poweredByHeader: false,
 };
 
