@@ -1,0 +1,12 @@
+[build]
+  command = "yarn build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+  # Prevent Next.js from trying to access Vercel runtime config
+  NEXT_PUBLIC_VERCEL = "0"
+
