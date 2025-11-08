@@ -1,6 +1,9 @@
 # Syntrak Website
 
-Tech Stack
+> https://syntrak.vercel.app/
+
+
+> Tech Stack
 
 - **Next.js 16** - React framework with App Router
 - **TypeScript** - Type-safe development
