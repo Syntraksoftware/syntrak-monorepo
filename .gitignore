@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+business_plan.md
+business_model.md
+NETLIFY_DEPLOYMENT.md
