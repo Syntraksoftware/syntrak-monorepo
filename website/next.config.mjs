@@ -22,6 +22,8 @@ const nextConfig = {
   images: {
     unoptimized: false,
   },
+  // Explicitly disable Vercel-specific features
+  poweredByHeader: false,
 };
 
 export default nextConfig;
