@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d0d;
+  --foreground: #ffffff;
+  --card-bg: #0a0a0a;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --accent-purple: #667eea;
+  --accent-purple-dark: #764ba2;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated mesh gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse 1400px 800px at 25% 35%, 
+      rgba(45, 45, 50, 0.4) 0%, 
+      rgba(35, 35, 40, 0.25) 25%, 
+      rgba(25, 25, 30, 0.15) 50%, 
+      transparent 75%),
+    radial-gradient(ellipse 1000px 600px at 75% 65%, 
+      rgba(40, 40, 45, 0.35) 0%, 
+      rgba(30, 30, 35, 0.2) 30%, 
+      rgba(20, 20, 25, 0.1) 60%, 
+      transparent 85%),
+    radial-gradient(ellipse 800px 400px at 15% 75%, 
+      rgba(50, 50, 55, 0.3) 0%, 
+      rgba(35, 35, 40, 0.18) 40%, 
+      rgba(25, 25, 30, 0.08) 70%, 
+      transparent 90%),
+    radial-gradient(circle at 85% 15%, 
+      rgba(55, 55, 60, 0.2) 0%, 
+      transparent 50%),
+    linear-gradient(135deg, 
+      #0d0d0d 0%, 
+      #1a1a1a 15%, 
+      #0f0f0f 30%, 
+      #1a1a1a 45%, 
+      #0d0d0d 60%, 
+      #1a1a1a 75%, 
+      #0f0f0f 90%, 
+      #0d0d0d 100%);
+  z-index: -2;
+  animation: global-wave-flow 25s ease-in-out infinite;
+}
+
+/* Mesh grid pattern */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+  background-size: 100px 100px;
+  background-position: 0 0, 0 0;
+  animation: global-mesh-move 35s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes global-wave-flow {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-25px, -10px) rotate(0.3deg);
+  }
+  66% {
+    transform: translate(15px, -15px) rotate(-0.2deg);
+  }
+}
+
+@keyframes global-mesh-move {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-15px, -8px) scale(1.008);
+  }
+  50% {
+    transform: translate(8px, -12px) scale(0.992);
+  }
+  75% {
+    transform: translate(-8px, 6px) scale(1.003);
+  }
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(255, 255, 255, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 
+      0 25px 80px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(255, 255, 255, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+  
+  .glass-nav {
+    background: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .gradient-bg-light {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
