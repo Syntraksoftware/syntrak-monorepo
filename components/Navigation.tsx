@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +34,14 @@ export default function Navigation() {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <a href="#home" className="nav-logo" onClick={closeMenu}>
-          <span className="text-xl font-semibold">Syntrak</span>
+          <Image
+            src="/syntrak-logo.svg"
+            alt="Syntrak"
+            width={120}
+            height={40}
+            className="h-8 w-auto"
+            priority
+          />
         </a>
 
         <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>

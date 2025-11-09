@@ -205,10 +205,12 @@ body::after {
   justify-self: start;
   position: relative;
   z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo:hover {
-  color: #a1a1aa;
+  opacity: 0.8;
 }
 
 .navbar.scrolled .nav-logo {
@@ -216,6 +218,11 @@ body::after {
   left: 2rem;
   z-index: 10;
   transform: translateX(70px);
+}
+
+.navbar.scrolled .nav-logo img {
+  height: 28px;
+  width: auto;
 }
 
 .nav-menu {
