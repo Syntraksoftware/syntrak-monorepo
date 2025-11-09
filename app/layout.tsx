@@ -5,8 +5,13 @@ export const metadata: Metadata = {
   title: "Syntrak - Personalized Ski Coaching via Smart Thermals",
   description: "Revolutionary ski instruction through proprietary smart thermal base layers with real-time AI coaching and 3D visualization",
   icons: {
-    icon: "/syntrak-logo.png",
-    apple: "/syntrak-logo.png",
+    icon: [
+      { url: "/syntrak-logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/syntrak-logo.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/syntrak-logo.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
