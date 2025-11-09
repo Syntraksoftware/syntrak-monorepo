@@ -35,11 +35,11 @@ export default function Navigation() {
       <div className="nav-container">
         <a href="#home" className="nav-logo" onClick={closeMenu}>
           <Image
-            src="/syntrak-logo.png"
+            src="/syntrak-logo-white.png"
             alt="Syntrak"
-            width={180}
-            height={60}
-            className="h-12 w-auto"
+            width={240}
+            height={80}
+            className="h-16 w-auto"
             priority
           />
         </a>
