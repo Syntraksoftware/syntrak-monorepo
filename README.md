@@ -1,6 +1,8 @@
 # Syntrak Website
 
-> https://syntrak.vercel.app/
+> **Live Site**: https://syntrak.vercel.app/
+> 
+> **Custom Domain**: Configure your Cloudflare domain - see [DOMAIN_SETUP.md](./DOMAIN_SETUP.md)
 
 
 > Tech Stack

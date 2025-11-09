@@ -35,7 +35,7 @@ export default function Navigation() {
       <div className="nav-container">
         <a href="#home" className="nav-logo" onClick={closeMenu}>
           <Image
-            src="/syntrak-logo.svg"
+            src="/syntrak-logo.png"
             alt="Syntrak"
             width={120}
             height={40}

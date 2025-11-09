@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex justify-center mb-4">
               <Image
-                src="/syntrak-logo.svg"
+                src="/syntrak-logo.png"
                 alt="Syntrak"
                 width={140}
                 height={45}
