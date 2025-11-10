@@ -200,6 +200,7 @@ body::after {
   top: 0;
   left: 0;
   right: 0;
+  padding-top: env(safe-area-inset-top, 10px);
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #1a1a1a;
@@ -212,7 +213,7 @@ body::after {
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 15px;
-  margin: 15px auto;
+  margin: calc(env(safe-area-inset-top, 10px) + 15px) auto 15px;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.03);
@@ -221,6 +222,7 @@ body::after {
   left: 0;
   right: 0;
   transform: none;
+  padding-top: 0;
 }
 
 .nav-container {

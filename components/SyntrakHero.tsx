@@ -13,7 +13,7 @@ export default function SyntrakHero() {
       <div 
         className="absolute z-0" 
         style={{ 
-          top: '100px', 
+          top: '50px', 
           left: 0, 
           right: 0, 
           height: 'calc(100vh + 200px)', 
