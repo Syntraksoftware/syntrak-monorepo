@@ -12,12 +12,10 @@ export default function Blog() {
   }> = [];
 
   const categories = [
-    "All",
-    "Productivity",
+    "Case Study",
+    "Ski",
     "Technology",
     "Tips",
-    "Security",
-    "Case Study",
   ];
 
   return (

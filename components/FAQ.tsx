@@ -58,7 +58,7 @@ export default function FAQ() {
                   {faq.question}
                 </h3>
                 <svg
-                  className={`w-5 h-5 text-[#a1a1aa] flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-[#a1a1aa] flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -73,11 +73,15 @@ export default function FAQ() {
                   />
                 </svg>
               </button>
-              {openIndex === index && (
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
                 <div className="px-6 pb-5">
                   <p className="text-[#a1a1aa] leading-relaxed">{faq.answer}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

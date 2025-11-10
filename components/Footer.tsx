@@ -83,7 +83,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+            </div>
 
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Resources</h4>
@@ -122,7 +122,7 @@ export default function Footer() {
                   <Link
                     href={item.href}
                     className="text-sm text-[#a1a1aa] hover:text-white transition-colors"
-                  >
+            >
                     {item.label}
                   </Link>
                 </li>
@@ -206,7 +206,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center text-sm text-[#71717a] mt-8">
-            <p>&copy; {new Date().getFullYear()} Syntrak. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Syntrak. All rights reserved.</p>
             <p className="mt-2">
               <Link href="/subprocessors" className="hover:text-white transition-colors">
                 List of subprocessors.

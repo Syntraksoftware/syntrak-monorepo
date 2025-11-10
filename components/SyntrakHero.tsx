@@ -13,17 +13,17 @@ export default function SyntrakHero() {
       <div 
         className="absolute z-0" 
         style={{ 
-          top: '-80px', 
+          top: '100px', 
           left: 0, 
           right: 0, 
-          height: 'calc(80px + 100vh + 200px)', 
+          height: 'calc(100vh + 200px)', 
           width: '100vw',
           margin: 0,
           padding: 0
         }}
       >
         <Image
-          src="/mountain2.png"
+          src="/final_mountain2.png"
           alt="Snow-covered mountain"
           fill
           className="object-cover"
@@ -45,20 +45,14 @@ export default function SyntrakHero() {
 
       {/* Content */}
       <div className="max-w-5xl mx-auto text-center relative z-10 px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <span className="inline-block px-4 py-2 glass-card rounded-full text-sm text-white mb-6 backdrop-blur-md">
-            Personalized Ski Coaching
-          </span>
-        </div>
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight tracking-tight drop-shadow-2xl">
-          Syntrak
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light mb-6 text-white leading-relaxed tracking-wide drop-shadow-2xl" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
+          Syntrak Intelligent Tracking
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-3xl text-white/95 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-          Personalized Ski Coaching via Smart Thermals
+        <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-5xl mx-auto drop-shadow-lg">
+         1) Motion Capture, AI Coaching, Real-Time Results: All in Your Thermals
         </p>
-        <p className="text-lg sm:text-xl text-white/90 mb-12 max-w-2xl mx-auto drop-shadow-md">
-          Revolutionizing ski instruction through proprietary smart thermal base layers
-          with real-time AI coaching and 3D visualization.
+        <p className="text-lg sm:text-xl text-white/90 mb-12 max-w-5xl mx-auto drop-shadow-md">
+        2) The world's first smart performance thermals with real time 3D motion capture analytics and personalized coaching
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <a
