@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,16 +25,15 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Product", href: "#product" },
-    { label: "Technology", href: "#technology" },
-    { label: "Features", href: "#features" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "Enterprise", href: "/enterprise" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <a href="#home" className="nav-logo" onClick={closeMenu}>
+        <Link href="/" className="nav-logo" onClick={closeMenu}>
           <Image
             src="/syntrak-logo-white.png"
             alt="Syntrak"
@@ -42,20 +42,20 @@ export default function Navigation() {
             className="h-16 w-auto"
             priority
           />
-        </a>
+        </Link>
 
         <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
           {navItems.map((item) => (
             <li key={item.href} className="nav-item">
-              <a href={item.href} className="nav-link" onClick={closeMenu}>
+              <Link href={item.href} className="nav-link" onClick={closeMenu}>
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <a href="#contact" className="nav-contact-btn" onClick={closeMenu}>
-          Contact
+          Get Started
         </a>
 
         <button className="nav-toggle" onClick={toggleMenu}>

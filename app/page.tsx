@@ -1,24 +1,24 @@
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import ProblemSolution from "@/components/ProblemSolution";
-import ProductOverview from "@/components/ProductOverview";
-import TechnologyStack from "@/components/TechnologyStack";
-import CoreFeatures from "@/components/CoreFeatures";
-import BusinessModel from "@/components/BusinessModel";
-import ValuePropositions from "@/components/ValuePropositions";
+import SyntrakHero from "@/components/SyntrakHero";
+import SyntrakFeatures from "@/components/SyntrakFeatures";
+import HowItWorks from "@/components/HowItWorks";
+import Undetectable from "@/components/Undetectable";
+import Transcription from "@/components/Transcription";
+import FAQ from "@/components/FAQ";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-white relative">
+    <main className="min-h-screen bg-[#0d0d0d] text-white relative" style={{ overflow: 'visible' }}>
       <Navigation />
-      <Hero />
-      <ProblemSolution />
-      <ProductOverview />
-      <TechnologyStack />
-      <CoreFeatures />
-      <BusinessModel />
-      <ValuePropositions />
+      <SyntrakHero />
+      <SyntrakFeatures />
+      <HowItWorks />
+      <Undetectable />
+      <Transcription />
+      <FAQ />
+      <CTASection />
       <Footer />
     </main>
   );
