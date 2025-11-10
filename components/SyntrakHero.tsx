@@ -49,21 +49,21 @@ export default function SyntrakHero() {
           Syntrak Intelligent Tracking
         </h1>
         <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-5xl mx-auto drop-shadow-lg">
-         1) Motion Capture, AI Coaching, Real-Time Results: All in Your Thermals
+         Motion Capture, AI Coaching, Real-Time Results: All in Your Thermals
         </p>
         <p className="text-lg sm:text-xl text-white/90 mb-12 max-w-5xl mx-auto drop-shadow-md">
-        2) The world's first smart performance thermals with real time 3D motion capture analytics and personalized coaching
+        The world's first smart performance thermals with real time 3D motion capture analytics and personalized coaching
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <a
             href="#get-started"
-            className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="liquid-glass-btn liquid-glass-primary px-8 py-4 rounded-xl font-semibold"
           >
             Get Started
           </a>
           <a
             href="#demo"
-            className="px-8 py-4 glass-card text-white rounded-lg font-semibold hover:border-white/20 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 backdrop-blur-md"
+            className="liquid-glass-btn liquid-glass-secondary px-8 py-4 rounded-xl font-semibold"
           >
             Learn More
           </a>
