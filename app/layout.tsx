@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
 import "./globals.css";
+import ScrollRestoration from "./ScrollRestoration";
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${ebGaramond.variable}`}>
       <body className="antialiased">
+        <ScrollRestoration />
         {children}
       </body>
     </html>
