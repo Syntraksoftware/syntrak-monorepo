@@ -25,6 +25,7 @@ export default function Navigation() {
   };
 
   const navItems = [
+    { label: "Home", href: "/" },
     { label: "Pricing", href: "/pricing" },
     { label: "Enterprise", href: "/enterprise" },
     { label: "Blog", href: "/blog" },

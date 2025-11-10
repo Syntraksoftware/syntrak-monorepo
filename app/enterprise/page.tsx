@@ -7,37 +7,31 @@ export default function Enterprise() {
       title: "Advanced Security",
       description:
         "SOC 2 Type 2, ISO 27001, GDPR, HIPAA compliant. Enterprise-grade security for your sensitive data.",
-      icon: "🔒",
     },
     {
       title: "SSO & Admin Controls",
       description:
         "Single Sign-On (SSO) integration, centralized admin dashboard, and granular permission controls.",
-      icon: "⚙️",
     },
     {
       title: "Custom Integrations",
       description:
         "Integrate with your existing tools like Slack, Salesforce, Microsoft Teams, and more.",
-      icon: "🔌",
     },
     {
       title: "Dedicated Support",
       description:
         "24/7 priority support with dedicated account manager and SLA guarantees.",
-      icon: "💬",
     },
     {
       title: "Team Collaboration",
       description:
         "Share notes across teams, collaborate in real-time, and manage team access.",
-      icon: "👥",
     },
     {
       title: "Custom Training",
       description:
         "Onboarding sessions, custom training programs, and best practices workshops.",
-      icon: "🎓",
     },
   ];
 
@@ -71,7 +65,6 @@ export default function Enterprise() {
                 key={index}
                 className="glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-3 text-white">
                   {feature.title}
                 </h3>

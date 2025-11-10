@@ -8,10 +8,11 @@ export default function Pricing() {
       price: "$0",
       period: "forever",
       description: "Perfect for trying out Syntrak",
+      hardwarePrice: "$250 + shipping",
       features: [
-        "5 ski sessions per month",
-        "Basic coaching insights",
-        "Real-time movement tracking",
+        "Basic features",
+        "Basic avatar",
+        "Hardware purchase required ($250 + shipping)",
         "Email support",
       ],
       cta: "Get Started",
@@ -19,35 +20,40 @@ export default function Pricing() {
     },
     {
       name: "Pro",
-      price: "$20",
+      price: "$15",
       period: "per month",
-      description: "For professionals who want more",
+      yearlyPrice: "$165/year",
+      description: "For serious skiers who want more",
+      hardwarePrice: "$250 + shipping",
       features: [
-        "Unlimited ski sessions",
-        "AI-powered coaching insights",
-        "3D visualization",
-        "Personalized training plans",
+        "Advanced features",
+        "5-10 free avatars",
+        "Hardware purchase required ($250 + shipping)",
         "Priority support",
         "Advanced analytics",
+        "3D visualization",
       ],
       cta: "Start Free Trial",
       popular: true,
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      period: "",
-      description: "For teams and organizations",
+      name: "Premium",
+      price: "$30",
+      period: "per month",
+      yearlyPrice: "$330/year",
+      description: "Everything included, no extra costs",
+      hardwarePrice: "Included",
       features: [
-        "Everything in Pro",
-        "Team collaboration",
-        "Admin dashboard",
-        "SSO & security",
-        "Custom integrations",
-        "Dedicated support",
-        "SLA guarantee",
+        "Advanced+ features",
+        "Unlimited avatars",
+        "Hardware and shipping included",
+        "24/7 priority support",
+        "Advanced analytics",
+        "3D visualization",
+        "Personalized training plans",
+        "Dedicated account manager",
       ],
-      cta: "Contact Sales",
+      cta: "Start Free Trial",
       popular: false,
     },
   ];
@@ -90,8 +96,18 @@ export default function Pricing() {
                   {plan.period && (
                     <span className="text-[#a1a1aa] ml-2">{plan.period}</span>
                   )}
+                  {plan.yearlyPrice && (
+                    <div className="text-sm text-[#667eea] mt-1">
+                      {plan.yearlyPrice}
+                    </div>
+                  )}
                 </div>
-                <p className="text-[#a1a1aa] mb-6">{plan.description}</p>
+                <p className="text-[#a1a1aa] mb-2">{plan.description}</p>
+                {plan.hardwarePrice && (
+                  <p className="text-sm text-[#71717a] mb-6">
+                    Hardware: {plan.hardwarePrice}
+                  </p>
+                )}
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">

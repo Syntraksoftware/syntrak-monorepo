@@ -3,56 +3,13 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export default function Blog() {
-  const blogPosts = [
-    {
-      title: "How AI Meeting Assistants Are Transforming Remote Work",
-      excerpt:
-        "Discover how AI-powered meeting assistants are helping teams stay productive and organized in the remote work era.",
-      date: "January 15, 2025",
-      category: "Productivity",
-      readTime: "5 min read",
-    },
-    {
-      title: "5 Ways to Make Your Meetings More Effective",
-      excerpt:
-        "Learn proven strategies to make your meetings more productive, engaging, and actionable.",
-      date: "January 10, 2025",
-      category: "Tips",
-      readTime: "4 min read",
-    },
-    {
-      title: "The Future of Meeting Notes: AI vs. Traditional Methods",
-      excerpt:
-        "Compare AI-powered meeting notes with traditional note-taking methods and see which works best for your team.",
-      date: "January 5, 2025",
-      category: "Technology",
-      readTime: "6 min read",
-    },
-    {
-      title: "Why Real-Time Meeting Assistance Matters",
-      excerpt:
-        "Explore the benefits of getting AI assistance during meetings, not just after they end.",
-      date: "December 28, 2024",
-      category: "Productivity",
-      readTime: "5 min read",
-    },
-    {
-      title: "Building Trust in AI Meeting Tools",
-      excerpt:
-        "How we ensure privacy, security, and transparency in our AI meeting assistant platform.",
-      date: "December 20, 2024",
-      category: "Security",
-      readTime: "7 min read",
-    },
-    {
-      title: "Case Study: How Company X Increased Meeting Efficiency by 40%",
-      excerpt:
-        "A detailed look at how one company transformed their meeting culture using AI-powered tools.",
-      date: "December 15, 2024",
-      category: "Case Study",
-      readTime: "8 min read",
-    },
-  ];
+  const blogPosts: Array<{
+    title: string;
+    excerpt: string;
+    date: string;
+    category: string;
+    readTime: string;
+  }> = [];
 
   const categories = [
     "All",
@@ -73,7 +30,7 @@ export default function Blog() {
               Blog
             </h1>
             <p className="text-xl text-[#a1a1aa] max-w-2xl mx-auto">
-              Insights, tips, and stories about making meetings better.
+              Insights, tips, and stories about skiing and Syntrak.
             </p>
           </div>
 
@@ -88,31 +45,39 @@ export default function Blog() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
-              <Link
-                key={index}
-                href={`/blog/${post.title.toLowerCase().replace(/\s+/g, "-")}`}
-                className="glass-card p-6 rounded-xl hover:scale-105 transition-all duration-300 block"
-              >
-                <div className="mb-4">
-                  <span className="text-sm text-[#667eea] font-semibold">
-                    {post.category}
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">
-                  {post.title}
-                </h3>
-                <p className="text-[#a1a1aa] mb-4 leading-relaxed">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between text-sm text-[#71717a]">
-                  <span>{post.date}</span>
-                  <span>{post.readTime}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {blogPosts.length === 0 ? (
+            <div className="text-center py-20">
+              <p className="text-xl text-[#a1a1aa] mb-8">
+                Coming soon. Check back later for updates and insights.
+              </p>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {blogPosts.map((post, index) => (
+                <Link
+                  key={index}
+                  href={`/blog/${post.title.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="glass-card p-6 rounded-xl hover:scale-105 transition-all duration-300 block"
+                >
+                  <div className="mb-4">
+                    <span className="text-sm text-[#667eea] font-semibold">
+                      {post.category}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 text-white">
+                    {post.title}
+                  </h3>
+                  <p className="text-[#a1a1aa] mb-4 leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between text-sm text-[#71717a]">
+                    <span>{post.date}</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
 
           <div className="mt-16 text-center">
             <p className="text-[#a1a1aa] mb-6">

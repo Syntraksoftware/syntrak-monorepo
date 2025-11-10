@@ -4,25 +4,21 @@ export default function SyntrakFeatures() {
       title: "Real-time AI Coaching",
       description:
         "Syntrak uses advanced sensors and AI to provide real-time coaching feedback as you ski.",
-      icon: "🎿",
     },
     {
       title: "3D Visualization",
       description:
         "See your form and technique visualized in 3D with instant feedback on your performance.",
-      icon: "📊",
     },
     {
       title: "Smart Thermal Technology",
       description:
         "Proprietary smart thermal base layers that track your movements and provide personalized insights.",
-      icon: "🔥",
     },
     {
       title: "Personalized Training",
       description:
         "Get customized training recommendations based on your skiing style and skill level.",
-      icon: "⭐",
     },
   ];
 
@@ -38,7 +34,6 @@ export default function SyntrakFeatures() {
               key={index}
               className="glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-white">
                 {feature.title}
               </h3>
