@@ -19,29 +19,18 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center text-white mb-4">
-          Get started in 3 steps
-        </h2>
-        <p className="text-center text-[#a1a1aa] mb-16 max-w-2xl mx-auto text-lg">
-          The easiest way to improve your skiing with personalized AI coaching.
-        </p>
-        <div className="grid md:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="text-center glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
-            >
-              <div className="text-6xl font-bold text-[#667eea] mb-4">
-                {step.number}
-              </div>
-              <h3 className="text-2xl font-semibold mb-4 text-white">
-                {step.title}
-              </h3>
-              <p className="text-[#a1a1aa] leading-relaxed">
-                {step.description}
-              </p>
+    <section className="raycast-section raycast-section-alt">
+      <div className="raycast-section-inner">
+        <div className="raycast-section-title mx-auto max-w-[640px] text-center">
+          <h2>Get started in 3 steps</h2>
+          <p>The easiest way to improve your skiing with personalized AI coaching.</p>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {steps.map((step) => (
+            <div key={step.number} className="raycast-card p-8 text-center">
+              <div className="raycast-accent-text text-5xl font-semibold">{step.number}</div>
+              <h3 className="mt-4 text-xl font-medium text-[#f4f4f6]">{step.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">{step.description}</p>
             </div>
           ))}
         </div>
@@ -49,4 +38,3 @@ export default function HowItWorks() {
     </section>
   );
 }
-

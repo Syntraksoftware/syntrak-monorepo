@@ -1,28 +1,14 @@
-/* Page transition animations */
+/* Page transition animations — opacity only so fixed nav stays viewport-pinned */
 .page-transition {
-  animation: fadeInUp 0.5s ease-out;
-  will-change: opacity, transform;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .page-transition.loading {
   opacity: 0;
-  transform: translateY(20px);
 }
 
 .page-transition.loaded {
   opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Smooth transitions for all main content */
@@ -43,6 +29,16 @@ main {
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.hero-title {
+  letter-spacing: -0.04em;
+  line-height: 0.95;
 }
 
 @import "tailwindcss";
@@ -60,13 +56,14 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  font-family: 'Readex Pro', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow-x: hidden;
+  height: 100%;
 }
 
 /* Animated mesh gradient background */

@@ -1,5 +1,5 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import RaycastPageShell from "@/components/raycast/RaycastPageShell";
+import Link from "next/link";
 
 export default function Enterprise() {
   const features = [
@@ -45,105 +45,78 @@ export default function Enterprise() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-white relative">
-      <Navigation />
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Syntrak for Enterprise
-            </h1>
-            <p className="text-xl text-[#a1a1aa] max-w-3xl mx-auto">
-              Trusted by leading companies worldwide. Enterprise-grade security,
-              compliance, and support for your organization.
-            </p>
-          </div>
+    <RaycastPageShell>
+      <section className="pro-section-inner pb-20 pt-4 md:pb-24">
+        <div className="pro-section-title pro-section-title-center">
+          <h1 className="raycast-display">Raycast for Enterprise</h1>
+          <p>
+            Trusted by leading companies worldwide. Enterprise-grade security, compliance, and
+            support for your organization.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
+        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature) => (
+            <div
+              key={feature.title}
+              className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-6"
+            >
+              <h2 className="text-lg font-medium text-[#f4f4f6]">{feature.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[#9c9c9d]">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-8">
+          <h2 className="text-center text-2xl font-medium text-[#f4f4f6]">
+            Security & Compliance
+          </h2>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            {certifications.map((cert) => (
+              <span
+                key={cert}
+                className="rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#101111] px-4 py-2 text-sm text-[#9c9c9d]"
               >
-                <h3 className="text-xl font-semibold mb-3 text-white">
-                  {feature.title}
-                </h3>
-                <p className="text-[#a1a1aa] leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
+                {cert}
+              </span>
             ))}
           </div>
+        </div>
 
-          <div className="glass-card p-8 rounded-xl mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Security & Compliance
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {certifications.map((cert, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-white/5 rounded-lg text-[#a1a1aa] border border-white/8"
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="glass-card p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">ROI Calculator</h3>
-              <p className="text-[#a1a1aa] mb-6">
-                Calculate how much time and money Syntrak can save your team.
-              </p>
-              <a
-                href="#roi-calculator"
-                className="inline-block px-6 py-3 bg-[#667eea] text-white rounded-lg font-semibold hover:bg-[#5568d3] transition-all"
-              >
-                Calculate ROI
-              </a>
-            </div>
-            <div className="glass-card p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-4">Book a Demo</h3>
-              <p className="text-[#a1a1aa] mb-6">
-                See Syntrak in action with a personalized demo for your team.
-              </p>
-              <a
-                href="#book-demo"
-                className="inline-block px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all"
-              >
-                Schedule Demo
-              </a>
-            </div>
-          </div>
-
-          <div className="text-center glass-card p-12 rounded-xl">
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to get started?
-            </h2>
-            <p className="text-xl text-[#a1a1aa] mb-8">
-              Contact our enterprise team to discuss your needs.
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          <div className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-8">
+            <h2 className="text-2xl font-medium text-[#f4f4f6]">ROI Calculator</h2>
+            <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">
+              Calculate how much time and money Raycast can save your team.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:enterprise@syntrak.com"
-                className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-all"
-              >
-                Contact Sales
-              </a>
-              <a
-                href="/pricing"
-                className="px-8 py-4 glass-card hover:border-white/20 rounded-lg font-semibold transition-all"
-              >
-                View Pricing
-              </a>
-            </div>
+            <Link href="#roi-calculator" className="raycast-btn-light mt-6 inline-flex">
+              Calculate ROI
+            </Link>
+          </div>
+          <div className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-8">
+            <h2 className="text-2xl font-medium text-[#f4f4f6]">Book a Demo</h2>
+            <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">
+              See Raycast in action with a personalized demo for your team.
+            </p>
+            <Link href="#book-demo" className="raycast-btn-light mt-6 inline-flex">
+              Schedule Demo
+            </Link>
+          </div>
+        </div>
+
+        <div className="pro-enterprise-cta mt-16 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-10 text-center">
+          <h2 className="text-2xl font-medium text-[#f4f4f6]">Ready to get started?</h2>
+          <p className="mt-3 text-[#9c9c9d]">Contact our enterprise team to discuss your needs.</p>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="mailto:enterprise@raycast.com" className="raycast-btn-light">
+              Contact Sales
+            </Link>
+            <Link href="/pricing" className="raycast-btn-secondary">
+              View Pricing
+            </Link>
           </div>
         </div>
       </section>
-      <Footer />
-    </main>
+    </RaycastPageShell>
   );
 }
-

@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import "./raycast.css";
 import ScrollRestoration from "./ScrollRestoration";
 
-const ebGaramond = EB_Garamond({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-eb-garamond",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Syntrak - Personalized Ski Coaching",
-  description: "Revolutionizing ski instruction through proprietary smart thermal base layers with real-time AI coaching and 3D visualization",
+  title: "Raycast - Your shortcut to everything",
+  description:
+    "A collection of powerful productivity tools all within an extendable launcher.",
   icons: {
     icon: [
       { url: "/syntrak-logo.png", sizes: "192x192", type: "image/png" },
@@ -30,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${ebGaramond.variable}`}>
-      <body className="antialiased">
+    <html lang="en" className="scroll-smooth h-full">
+      <body className={`antialiased h-full ${inter.className}`}>
         <ScrollRestoration />
         {children}
       </body>

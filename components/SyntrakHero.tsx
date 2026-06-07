@@ -4,72 +4,69 @@ import Image from "next/image";
 
 export default function SyntrakHero() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center pt-0 relative"
-      style={{ marginTop: 0, overflow: 'visible', paddingLeft: 0, paddingRight: 0 }}
-    >
-      {/* Mountain Background Image - positioned behind header, fully displayed filling entire width with no gaps */}
-      <div 
-        className="absolute z-0" 
-        style={{ 
-          top: '50px', 
-          left: 0, 
-          right: 0, 
-          height: 'calc(100vh + 200px)', 
-          width: '100vw',
-          margin: 0,
-          padding: 0
-        }}
-      >
+    <section id="home" className="relative overflow-hidden pb-16 pt-12 md:pb-24 md:pt-16">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/final_mountain2.png"
           alt="Snow-covered mountain"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
           quality={90}
-          style={{ objectPosition: 'center top' }}
           sizes="100vw"
         />
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
-        {/* Gradient fade overlay - smooth transition from mountain to black */}
-        <div 
-          className="absolute inset-0" 
-          style={{
-            background: 'linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(13, 13, 13, 0.3) 60%, rgba(13, 13, 13, 0.7) 75%, rgba(13, 13, 13, 0.95) 85%, rgb(13, 13, 13) 100%)'
-          }}
-        ></div>
+        <div className="absolute inset-0 bg-[#07080a]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07080a]/30 via-transparent to-[#07080a]" />
       </div>
 
-      {/* Content */}
-      <div className="max-w-5xl mx-auto text-center relative z-10 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light mb-6 text-white leading-relaxed tracking-wide drop-shadow-2xl" style={{ fontFamily: 'var(--font-eb-garamond), serif' }}>
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(87,193,255,0.15),transparent)]" />
+
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 text-center lg:px-8">
+        <h1 className="raycast-display mx-auto max-w-[900px] text-balance">
           Syntrak Intelligent Tracking
         </h1>
-        <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-5xl mx-auto drop-shadow-lg">
-         Motion Capture, AI Coaching, Real-Time Results: All in Your Thermals
+        <p className="mx-auto mt-5 max-w-[640px] text-lg leading-relaxed text-[#cdcdcd]">
+          Motion Capture, AI Coaching, Real-Time Results: All in Your Thermals
         </p>
-        <p className="text-lg sm:text-xl text-white/90 mb-12 max-w-5xl mx-auto drop-shadow-md">
-        The world's first smart performance thermals with real time 3D motion capture analytics and personalized coaching
+        <p className="mx-auto mt-3 max-w-[640px] text-base leading-relaxed text-[#9c9c9d]">
+          The world&apos;s first smart performance thermals with real time 3D motion capture
+          analytics and personalized coaching
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-          <a
-            href="#get-started"
-            className="liquid-glass-btn liquid-glass-primary px-8 py-4 rounded-xl font-semibold"
-          >
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="#get-started" className="raycast-btn">
             Get Started
           </a>
-          <a
-            href="#demo"
-            className="liquid-glass-btn liquid-glass-secondary px-8 py-4 rounded-xl font-semibold"
-          >
+          <a href="#demo" className="raycast-btn raycast-btn-secondary">
             Learn More
           </a>
+        </div>
+      </div>
+
+      <div className="relative z-10 mx-auto mt-14 max-w-[980px] px-6 lg:px-8">
+        <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d]/90 shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset] backdrop-blur-sm">
+          <div className="flex items-center gap-2 border-b border-[#242728] px-4 py-3">
+            <div className="h-3 w-3 rounded-full bg-[#57c1ff]/80" />
+            <div className="h-3 w-3 rounded-full bg-[#ffc533]/80" />
+            <div className="h-3 w-3 rounded-full bg-[#59d499]/80" />
+            <div className="ml-3 flex-1 rounded-md border border-[#242728] bg-[#07080a] px-3 py-1.5 text-left text-sm text-[#9c9c9d]">
+              Live coaching session — Syntrak
+            </div>
+          </div>
+          <div className="grid gap-px bg-[#242728] sm:grid-cols-3">
+            {[
+              { label: "Real-time AI", value: "Active" },
+              { label: "3D Motion", value: "Tracking" },
+              { label: "Form Score", value: "94%" },
+            ].map((item) => (
+              <div key={item.label} className="bg-[#101111] px-5 py-4 text-left">
+                <div className="text-xs text-[#9c9c9d]">{item.label}</div>
+                <div className="mt-1 text-sm font-medium text-[#57c1ff]">{item.value}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

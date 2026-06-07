@@ -23,21 +23,16 @@ export default function SyntrakFeatures() {
   ];
 
   return (
-    <section className="pt-60 pb-20 px-4 sm:px-6 lg:px-8 relative z-10" style={{ backgroundColor: 'transparent' }}>
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center text-white mb-16">
-          Four ways we revolutionize your skiing
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                {feature.title}
-              </h3>
-              <p className="text-[#a1a1aa] leading-relaxed">
+    <section className="raycast-section">
+      <div className="raycast-section-inner">
+        <div className="raycast-section-title mx-auto max-w-[640px] text-center">
+          <h2>Four ways we revolutionize your skiing</h2>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature) => (
+            <div key={feature.title} className="raycast-card p-6">
+              <h3 className="text-lg font-medium text-[#f4f4f6]">{feature.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">
                 {feature.description}
               </p>
             </div>
@@ -47,4 +42,3 @@ export default function SyntrakFeatures() {
     </section>
   );
 }
-

@@ -21,24 +21,17 @@ export default function Transcription() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center text-white mb-16">
-          Advanced tracking technology
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center glass-card p-8 rounded-xl hover:scale-105 transition-all duration-300"
-            >
-              <div className="text-5xl font-bold text-[#667eea] mb-2">
-                {stat.number}
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                {stat.label}
-              </h3>
-              <p className="text-[#a1a1aa] leading-relaxed">{stat.description}</p>
+    <section className="raycast-section raycast-section-alt">
+      <div className="raycast-section-inner">
+        <div className="raycast-section-title mx-auto max-w-[640px] text-center">
+          <h2>Advanced tracking technology</h2>
+        </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {stats.map((stat) => (
+            <div key={stat.label} className="raycast-card p-8 text-center">
+              <div className="raycast-accent-text text-4xl font-semibold">{stat.number}</div>
+              <h3 className="mt-3 text-lg font-medium text-[#f4f4f6]">{stat.label}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">{stat.description}</p>
             </div>
           ))}
         </div>
@@ -46,4 +39,3 @@ export default function Transcription() {
     </section>
   );
 }
-

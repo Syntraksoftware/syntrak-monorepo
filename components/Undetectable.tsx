@@ -1,45 +1,35 @@
 export default function Undetectable() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative z-10">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center text-white mb-4">
-          Seamless integration. No distractions.
-        </h2>
-        <p className="text-center text-[#a1a1aa] mb-12 text-lg">
-          How does Syntrak stay unobtrusive?
-        </p>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="glass-card p-8 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4 text-white">
-              Traditional Coaching
-            </h3>
-            <div className="space-y-4">
+    <section className="raycast-section">
+      <div className="raycast-section-inner">
+        <div className="raycast-section-title mx-auto max-w-[640px] text-center">
+          <h2>Seamless integration. No distractions.</h2>
+          <p>How does Syntrak stay unobtrusive?</p>
+        </div>
+        <div className="mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2">
+          <div className="raycast-card p-8">
+            <h3 className="text-lg font-medium text-[#f4f4f6]">Traditional Coaching</h3>
+            <div className="mt-5 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <span className="text-[#a1a1aa]">Requires instructor presence</span>
+                <div className="h-2.5 w-2.5 rounded-full bg-[#ff6161]" />
+                <span className="text-sm text-[#9c9c9d]">Requires instructor presence</span>
               </div>
-              <div className="text-sm text-[#71717a] italic">
-                Limited availability and high cost
-              </div>
+              <p className="text-sm italic text-[#6a6b6c]">Limited availability and high cost</p>
             </div>
           </div>
-          <div className="glass-card p-8 rounded-xl border-2 border-[#667eea]">
-            <h3 className="text-xl font-semibold mb-4 text-white">Syntrak</h3>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-[#a1a1aa]">
-                  Integrated into your base layer, invisible to others
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-[#a1a1aa]">Available anytime, anywhere</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-[#a1a1aa]">Personalized coaching 24/7</span>
-              </div>
+          <div className="raycast-card raycast-card-accent p-8">
+            <h3 className="text-lg font-medium text-[#f4f4f6]">Syntrak</h3>
+            <div className="mt-5 space-y-4">
+              {[
+                "Integrated into your base layer, invisible to others",
+                "Available anytime, anywhere",
+                "Personalized coaching 24/7",
+              ].map((text) => (
+                <div key={text} className="flex items-center gap-3">
+                  <div className="h-2.5 w-2.5 rounded-full bg-[#59d499]" />
+                  <span className="text-sm text-[#9c9c9d]">{text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -47,4 +37,3 @@ export default function Undetectable() {
     </section>
   );
 }
-
