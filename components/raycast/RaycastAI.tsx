@@ -6,7 +6,7 @@ export default function RaycastAI() {
     },
     {
       title: "See what you can't feel.",
-      text: "200+ embedded sensors capture your biomechanics in real time, turning invisible movement into actionable feedback.",
+      text: "8+ embedded sensors capture your biomechanics in real time, turning invisible movement into actionable feedback.",
     },
     {
       title: "Improve after every run.",

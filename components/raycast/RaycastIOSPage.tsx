@@ -16,7 +16,7 @@ function AppStoreCTA({ className = "" }: { className?: string }) {
   return (
     <Link href="/#download" className={`raycast-btn-light ${className}`.trim()}>
       <AppleIcon />
-      Get the App
+      Pre-order now
     </Link>
   );
 }

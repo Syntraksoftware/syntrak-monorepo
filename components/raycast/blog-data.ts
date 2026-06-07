@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "we-hack-every-friday",
     title: "How we test on the slopes",
-    excerpt: "Our Friday field-testing ritual — and what we've learned from 200+ embedded sensors.",
+    excerpt: "Our Friday field-testing ritual — and what we've learned from 8+ embedded sensors.",
     date: "June 22, 2022",
     dateTime: "2022-06-22",
     category: "company",
@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "the-new-raycast",
     title: "Introducing the Founders Edition",
-    excerpt: "The world's first smart performance thermal — 200+ sensors, real-time AI coaching, ships Q4 2026.",
+    excerpt: "The world's first smart performance thermal — 8+ sensors, real-time AI coaching, ships Q4 2026.",
     date: "May 14, 2026",
     category: "news",
     featured: true,

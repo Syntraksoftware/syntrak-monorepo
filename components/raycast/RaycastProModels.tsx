@@ -27,9 +27,9 @@ export default function RaycastProModels() {
       <div className="pro-section-inner">
         <div className="pro-section-title pro-section-title-center">
           <h2>One garment.</h2>
-          <p>200+ sensors.</p>
+          <p>8+ sensors.</p>
           <p className="pro-section-copy">
-            Every sensor feeds into coaching models tuned for <em>alpine skiing biomechanics</em> —
+            Every sensor feeds into coaching models tuned for <em>alpine skiing biomechanics</em>, 
             from edge angles to centre-of-mass tracking.
           </p>
         </div>
@@ -54,28 +54,34 @@ export default function RaycastProModels() {
 
           <div className="pro-models-table-wrap">
             <table className="pro-models-table">
+              <colgroup>
+                <col className="pro-models-col-name" />
+                <col className="pro-models-col-metric" />
+                <col className="pro-models-col-metric" />
+                <col className="pro-models-col-context" />
+              </colgroup>
               <thead>
                 <tr>
-                  <th>model</th>
-                  <th>speed</th>
-                  <th>intelligence</th>
-                  <th>context</th>
+                  <th className="pro-models-cell-name">model</th>
+                  <th className="pro-models-cell-metric">speed</th>
+                  <th className="pro-models-cell-metric">intelligence</th>
+                  <th className="pro-models-cell-context">context</th>
                 </tr>
               </thead>
               <tbody>
                 {models.map((model) => (
                   <tr key={model.name}>
-                    <td>
+                    <td className="pro-models-cell-name">
                       {model.name}
                       {model.advanced && "*"}
                     </td>
-                    <td>
+                    <td className="pro-models-cell-metric">
                       <Rating value={model.speed} />
                     </td>
-                    <td>
+                    <td className="pro-models-cell-metric">
                       <Rating value={model.intelligence} />
                     </td>
-                    <td>{model.context}</td>
+                    <td className="pro-models-cell-context">{model.context}</td>
                   </tr>
                 ))}
               </tbody>

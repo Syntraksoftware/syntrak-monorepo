@@ -140,7 +140,7 @@ export default function RaycastPricingCards() {
           title="Starter"
           subtitle="Free with garment."
           price="$0"
-          cta={{ label: "Get the App", href: "/#download", icon: "apple" }}
+          cta={{ label: "Pre-order now", href: "/#download", icon: "apple" }}
         >
           <FeatureItem title="Core features, including:">
             Motion tracking, daily session summaries, distance logging, offline sessions + more…

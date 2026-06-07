@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AppleIcon, RaycastLogoIcon, WindowsIcon } from "./icons";
+import { AppleIcon, RaycastLogoIcon } from "./icons";
 
 const footerColumns = [
   {
@@ -44,7 +44,7 @@ export default function RaycastFooter() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
             <Link href="/">
-              <RaycastLogoIcon className="h-10 w-10" />
+              <RaycastLogoIcon className="h-8 w-auto" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-[#9c9c9d]">
               See Every Movement. Master Every Run.
@@ -67,28 +67,6 @@ export default function RaycastFooter() {
               </ul>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 border-t border-[#242728] pt-10">
-          <h3 className="raycast-display-lg text-center">Master every run.</h3>
-          <p className="mt-3 text-center text-[#cdcdcd]">
-            Pre-order the Founders Edition smart thermal — ships Q4 2026.
-          </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/#download" className="raycast-btn">
-              <AppleIcon />
-              Download for iOS
-            </Link>
-            <Link href="/#download" className="raycast-btn">
-              <WindowsIcon />
-              Download for Android
-            </Link>
-          </div>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[13px] text-[#9c9c9d]">
-            <span>iOS 16+</span>
-            <span>Android 12+</span>
-            <span>Ships to 42 countries</span>
-          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#242728] pt-8 text-xs text-[#6a6b6c] md:flex-row">

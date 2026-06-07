@@ -10,17 +10,13 @@ export default function RaycastHero() {
           See Every Movement. Master Every Run.
         </h1>
         <p className="mx-auto mt-5 max-w-[560px] text-lg leading-relaxed text-[#cdcdcd]">
-          AI-powered biomechanical coaching, embedded invisibly in your base layer. Real-time insights. Every turn, every mountain.
+          Real-time insights. Every turn, every mountain.
         </p>
 
         <div id="download" className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a href="#download" className="raycast-btn">
             <AppleIcon />
-            Download for iOS
-          </a>
-          <a href="#download-windows" className="raycast-btn">
-            <WindowsIcon />
-            Download for Android
+            Pre-order now
           </a>
         </div>
 

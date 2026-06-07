@@ -1,10 +1,16 @@
-import { WindowsIcon } from "./icons";
+import Image from "next/image";
 
 export default function RaycastWindowsBetaBanner() {
   return (
     <div className="pricing-windows-banner-wrap">
       <div className="pricing-windows-banner">
-        <WindowsIcon />
+        <Image
+          src="/logos/white_logo.png"
+          alt="Syntrak"
+          width={32}
+          height={32}
+          className="pricing-windows-banner-logo"
+        />
         <div>
           <p className="pricing-windows-banner-title">Founders Edition</p>
           <p className="pricing-windows-banner-text">

@@ -55,7 +55,7 @@ function ChatMock() {
       </div>
       <div className="ai-chat-main">
         <div className="ai-chat-header">
-          <span>Project Assistant</span>
+          <span>AI Assistant</span>
           <span className="ai-chat-model">Syntrak</span>
         </div>
         <div className="ai-chat-thread">
@@ -126,12 +126,12 @@ export default function RaycastAIPage() {
             on the mountain
           </h1>
           <p className="ai-hero-description">
-            Syntrak combines 200+ embedded sensors with AI coaching — streaming personalised cues to your earbuds in real time
+            Syntrak combines 8+ embedded sensors with AI coaching — streaming personalised cues to your earbuds in real time
           </p>
           <div className="ai-hero-ctas">
             <Link href="/#download" className="raycast-btn-light">
               <AppleIcon />
-              Get the App
+              Pre-order now
             </Link>
             <span className="ai-hero-or">or</span>
             <Link href="/pricing" className="ai-hero-browser-link">
@@ -208,7 +208,7 @@ export default function RaycastAIPage() {
             <p className="ai-eyebrow">Real-Time Coaching</p>
             <h2>Hear it on every turn</h2>
             <p>
-              Audio cues arrive in under 10 ms — personalised feedback streamed straight to your
+              Audio advices arrive in under 10 ms — personalised feedback streamed straight to your
               earbuds while you ski
             </p>
           </div>
@@ -244,7 +244,7 @@ export default function RaycastAIPage() {
             <p className="ai-eyebrow">Coaching Commands</p>
             <h2>Analyse naturally</h2>
             <p>
-              Ask about your technique in plain language — from edge angles and hip rotation to
+              Ask about your technique in plain language, from edge angles and hip rotation to
               session comparisons and drill recommendations.
             </p>
           </div>
@@ -303,7 +303,7 @@ export default function RaycastAIPage() {
             <p className="ai-eyebrow">Coaching Commands</p>
             <h2>Your technique assistant</h2>
             <p>
-              Analyse runs, compare sessions, and get drill recommendations — all from built-in
+              Analyse runs, compare sessions, and get drill recommendations. All from built-in
               coaching commands in the Syntrak app.
             </p>
             <p className="ai-section-subcopy">
@@ -367,7 +367,7 @@ export default function RaycastAIPage() {
           <div className="ai-section-copy ai-section-copy-center">
             <p className="ai-eyebrow">Privacy</p>
             <h2>Your data is yours</h2>
-            <p>Syntrak is designed with privacy in mind — your biomechanical data stays yours.</p>
+            <p>Syntrak is designed with privacy in mind, your biomechanical data stays yours.</p>
           </div>
           <div className="ai-privacy-grid">
             {aiPrivacyItems.map((item) => (

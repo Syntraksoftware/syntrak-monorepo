@@ -10,7 +10,7 @@ export const syntrakFaqs: SyntrakFaq[] = [
     category: "Product",
     question: "What is Syntrak, exactly?",
     answer:
-      "Syntrak is the world's first smart performance thermal — a base layer with 200+ embedded sensors that capture your biomechanics in real time and stream personalised coaching cues to your earbuds while you ski.",
+      "Syntrak is the world's first smart performance thermal — a base layer with 8+ embedded sensors that capture your biomechanics in real time and stream personalised coaching cues to your earbuds while you ski.",
   },
   {
     category: "Product",
@@ -58,12 +58,12 @@ export const syntrakFaqs: SyntrakFaq[] = [
     category: "Shipping",
     question: "Do you ship internationally?",
     answer:
-      "Yes — we ship to 42 countries including the EU, UK, US, Canada, Japan, Australia, and most of South America. Shipping is free for Founders Edition.",
+      "Yes — we ship to all countries including the EU, UK, US, Canada, Japan, Australia, and most of South America. Shipping is free for Founders Edition.",
   },
   {
     category: "Product",
     question: "Can I use it for sports other than skiing?",
     answer:
-      "The current model is tuned specifically for alpine skiing biomechanics. Snowboard, trail-running, and cycling models are on the roadmap for 2027.",
-  },
+      "The current model is tuned specifically for alpine skiing biomechanics. Snowboard, cross-country skiing, backcountry skiing, and more models are on the roadmap for 2027.",
+  },  
 ];

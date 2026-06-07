@@ -194,7 +194,7 @@ export const annualPricing: Record<PlanColumn, CellValue> = {
 };
 
 export const pricingCtas: Record<PlanColumn, { label: string; href: string; primary?: boolean }> = {
-  free: { label: "Get the App", href: "/#download", primary: true },
+  free: { label: "Pre-order now", href: "/#download", primary: true },
   pro: { label: "Select Plan", href: "/#download", primary: true },
   teamsFree: { label: "Create Team", href: "/#download", primary: true },
   teamsPro: { label: "Select Plan", href: "/#download", primary: true },

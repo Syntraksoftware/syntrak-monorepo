@@ -515,12 +515,17 @@ body:has(.raycast-site)::after {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.pricing-windows-banner svg {
-  width: 20px;
-  height: 20px;
+.pricing-windows-banner svg,
+.pricing-windows-banner-logo {
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
   margin-top: 2px;
   color: #f4f4f6;
+}
+
+.pricing-windows-banner-logo {
+  object-fit: contain;
 }
 
 .pricing-windows-banner-title {
@@ -1356,21 +1361,39 @@ body:has(.raycast-site)::after {
 
 .pro-models-tabs {
   display: flex;
-  gap: 4px;
-  min-width: max-content;
+  gap: 8px;
+  width: 100%;
   padding: 12px 16px;
 }
 
 .pro-models-tab {
-  padding: 8px 12px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 8px 10px;
   font-size: 13px;
   font-weight: 500;
   color: #9c9c9d;
+  text-align: center;
+  white-space: nowrap;
   background: transparent;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
+}
+
+@media (max-width: 900px) {
+  .pro-models-tabs {
+    width: max-content;
+    min-width: 100%;
+    gap: 8px;
+  }
+
+  .pro-models-tab {
+    flex: 0 0 auto;
+    min-width: 88px;
+    padding: 8px 12px;
+  }
 }
 
 .pro-models-tab:hover,
@@ -1387,14 +1410,39 @@ body:has(.raycast-site)::after {
   width: 100%;
   min-width: 640px;
   border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.pro-models-col-name {
+  width: 44%;
+}
+
+.pro-models-col-metric {
+  width: 18%;
+}
+
+.pro-models-col-context {
+  width: 20%;
 }
 
 .pro-models-table th,
 .pro-models-table td {
   padding: 14px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  text-align: left;
   font-size: 14px;
+  vertical-align: middle;
+}
+
+.pro-models-cell-name {
+  text-align: left;
+}
+
+.pro-models-cell-metric {
+  text-align: center;
+}
+
+.pro-models-cell-context {
+  text-align: right;
 }
 
 .pro-models-table th {
@@ -1408,8 +1456,9 @@ body:has(.raycast-site)::after {
 }
 
 .pro-model-rating {
-  display: flex;
+  display: inline-flex;
   gap: 4px;
+  justify-content: center;
 }
 
 .pro-model-rating span {

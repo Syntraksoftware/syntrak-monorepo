@@ -48,14 +48,10 @@ export default function RaycastProPage() {
         </div>
 
         <div className="pro-section-inner pro-hero-content">
-          <div className="pro-hero-badge">
-            <ProBadge />
-            <span>Syntrak Pro</span>
-          </div>
-          <h1 className="pro-hero-title">New Level Unlocked</h1>
+
+          <h1 className="pro-hero-title">Built for athletes. Backed by science.</h1>
           <p className="pro-hero-description">
-            Turn Pro to unlock real-time audio coaching, unlimited 3D playback, advanced
-            biomechanical metrics, and full progress tracking across every run.
+            Live audio coaching, AI Coaching Engine, and Smart Thermal Fabric.
           </p>
           <ProCTAs />
         </div>
@@ -66,11 +62,6 @@ export default function RaycastProPage() {
           <p className="pro-eyebrow">Coaching</p>
         </div>
         <RaycastAI />
-        <div className="pro-section-inner">
-          <Link href="/ai" className="pro-more-link">
-            More about coaching
-          </Link>
-        </div>
       </section>
 
       <RaycastProModels />

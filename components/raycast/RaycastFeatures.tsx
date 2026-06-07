@@ -21,11 +21,11 @@ export default function RaycastFeatures() {
           <div>
             <div className="raycast-section-title">
               <h2>It&apos;s not about more gear.</h2>
-              <p>It&apos;s about coaching that moves with you — invisible, always on, and built into what you already wear.</p>
+              <p>It&apos;s about coaching that moves with you, invisible, always on. Built into what you already wear.</p>
             </div>
             <a href="#download" className="raycast-btn mt-8">
               <AppleIcon />
-              Get the App
+              Pre-order now
             </a>
           </div>
 
