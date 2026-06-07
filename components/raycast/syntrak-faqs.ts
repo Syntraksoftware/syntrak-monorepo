@@ -4,7 +4,7 @@ export type SyntrakFaq = {
   category?: string;
 };
 
-/** FAQ content sourced from https://syntrak-ai-ic2bodwv.manus.space/performance */
+/** Template FAQ content for the marketing site. */
 export const syntrakFaqs: SyntrakFaq[] = [
   {
     category: "Product",

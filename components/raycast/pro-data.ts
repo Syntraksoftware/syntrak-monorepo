@@ -141,4 +141,4 @@ export const proProductivityFeatures = [
   },
 ];
 
-export const RAYCAST_PRO_MEDIA = "https://www.raycast.com/_next/static/media";
+export { TEMPLATE_MEDIA as RAYCAST_PRO_MEDIA } from "./template-media";

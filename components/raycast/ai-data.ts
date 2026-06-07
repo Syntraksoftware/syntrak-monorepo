@@ -1,4 +1,4 @@
-export const RAYCAST_AI_MEDIA = "https://www.raycast.com/_next/static/media";
+export { TEMPLATE_MEDIA as RAYCAST_AI_MEDIA } from "./template-media";
 
 export const aiHeroExtensions = [
   "slack",

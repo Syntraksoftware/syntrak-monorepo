@@ -123,7 +123,7 @@ export default function RaycastEnterpriseCard() {
             <p className="pricing-enterprise-price-label">Custom Pricing</p>
             <p className="pricing-enterprise-billing">Only billed annually</p>
           </div>
-          <Link href="mailto:enterprise@raycast.com" className="pricing-enterprise-cta">
+          <Link href="mailto:hello@syntrak.com" className="pricing-enterprise-cta">
             <MailIcon />
             Contact Us
           </Link>

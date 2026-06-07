@@ -14,9 +14,9 @@ const footerColumns = [
   {
     title: "Developers",
     links: [
-      { label: "Documentation", href: "https://developers.raycast.com" },
-      { label: "API Reference", href: "https://developers.raycast.com/api-reference/introduction" },
-      { label: "Extension Store", href: "https://www.raycast.com/store" },
+      { label: "Documentation", href: "/ai" },
+      { label: "API Reference", href: "/ai" },
+      { label: "Extension Store", href: "/#store" },
     ],
   },
   {

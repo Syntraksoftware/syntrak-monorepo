@@ -1,52 +1,53 @@
 import Image from "next/image";
 import { ChevronRightIcon } from "./icons";
+import { templateExtension } from "./template-media";
 
 const extensions = [
   {
     name: "Linear",
     description: "Create, search and modify your issues without leaving your keyboard.",
-    icon: "https://misc-assets.raycast.com/extension-cards/linear-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/linear-web.png",
+    icon: "linear-icon.png",
+    image: "linear-web.png",
     gradient:
       "linear-gradient(138deg, rgba(32, 35, 91, 0.70) 22.00%, rgba(7, 9, 33, 0.70) 82.00%)",
   },
   {
     name: "Google Translate",
     description: "Use Google Translate to effortlessly translate into multiple languages",
-    icon: "https://misc-assets.raycast.com/extension-cards/google-translate-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/google-translate-web.png",
+    icon: "google-translate-icon.png",
+    image: "google-translate-web.png",
     gradient:
       "radial-gradient(94.21% 78.40% at 50.00% 29.91%, rgba(43, 94, 180, 0.70), rgba(13, 16, 35, 0.42))",
   },
   {
     name: "Spotify",
     description: "Search for music and podcasts, browse your library, and control playback.",
-    icon: "https://misc-assets.raycast.com/extension-cards/spotify-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/spotify-web.png",
+    icon: "spotify-icon.png",
+    image: "spotify-web.png",
     gradient:
       "radial-gradient(30.00% 40.00% at 52.00% 36.91%, rgba(13, 110, 48, 1.00), rgba(8, 53, 24, 1.00))",
   },
   {
     name: "Arc",
     description: "Navigate your open tabs or search through your browser history.",
-    icon: "https://misc-assets.raycast.com/extension-cards/arc-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/arc-web.png",
+    icon: "arc-icon.png",
+    image: "arc-web.png",
     gradient:
       "radial-gradient(50% 50% at 50% 50%, rgba(255, 99, 99, 0.35), rgba(7, 8, 10, 0.9))",
   },
   {
     name: "Slack",
     description: "Set your presence, see unread messages and search your chats.",
-    icon: "https://misc-assets.raycast.com/extension-cards/slack-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/slack-web.png",
+    icon: "slack-icon.png",
+    image: "slack-web.png",
     gradient:
       "linear-gradient(135deg, rgba(74, 21, 75, 0.8) 0%, rgba(20, 10, 30, 0.9) 100%)",
   },
   {
     name: "Notion",
     description: "The fastest way to search and create Notion pages.",
-    icon: "https://misc-assets.raycast.com/extension-cards/notion-icon.png",
-    image: "https://misc-assets.raycast.com/extension-cards/notion-web.png",
+    icon: "notion-icon.png",
+    image: "notion-web.png",
     gradient:
       "linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%)",
   },
@@ -98,7 +99,7 @@ export default function RaycastExtensions() {
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
                       <Image
-                        src={ext.icon}
+                        src={templateExtension(ext.icon)}
                         alt=""
                         width={56}
                         height={56}
@@ -116,7 +117,7 @@ export default function RaycastExtensions() {
                   <div className="mt-4 h-px bg-[rgba(255,255,255,0.08)]" />
                 </div>
                 <Image
-                  src={ext.image}
+                  src={templateExtension(ext.image)}
                   alt=""
                   width={360}
                   height={360}

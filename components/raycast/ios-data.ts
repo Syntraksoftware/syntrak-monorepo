@@ -1,6 +1,6 @@
 import { syntrakFaqs } from "./syntrak-faqs";
 
-export const RAYCAST_IOS_MEDIA = "https://www.raycast.com/_next/static/media";
+export { TEMPLATE_MEDIA as RAYCAST_IOS_MEDIA } from "./template-media";
 
 export const iosPresets = [
   "Raycast AI",

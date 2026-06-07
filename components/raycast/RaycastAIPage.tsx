@@ -135,7 +135,7 @@ export default function RaycastAIPage() {
               Download
             </Link>
             <span className="ai-hero-or">or</span>
-            <Link href="https://raycast.com/browser" className="ai-hero-browser-link">
+            <Link href="/ai" className="ai-hero-browser-link">
               Try in Browser
             </Link>
           </div>
@@ -264,9 +264,9 @@ export default function RaycastAIPage() {
           <div className="ai-store-row">
             <div>
               <h3>Explore the community of third party Extensions in the Raycast Store.</h3>
-              <a href="https://www.raycast.com/store" className="ai-inline-link">
+              <Link href="/#store" className="ai-inline-link">
                 Explore AI Extensions
-              </a>
+              </Link>
             </div>
             <Image
               src={`${RAYCAST_AI_MEDIA}/store-ai-extensions.2cdb57d1.png`}
@@ -284,9 +284,9 @@ export default function RaycastAIPage() {
                 Create your own AI Extension to support your own use case, and optionally publish
                 it to the Store for everyone to use.
               </p>
-              <a href="https://developers.raycast.com" className="ai-inline-link">
+              <Link href="/ai" className="ai-inline-link">
                 Explore Docs
-              </a>
+              </Link>
             </div>
             <Image
               src={`${RAYCAST_AI_MEDIA}/code-block.d4b1595c.png`}
@@ -351,7 +351,7 @@ export default function RaycastAIPage() {
               </article>
             ))}
           </div>
-          <Link href="https://raycast.com/prompts" className="ai-inline-link ai-inline-link-block">
+          <Link href="/ai" className="ai-inline-link ai-inline-link-block">
             Explore AI Commands
           </Link>
         </div>
@@ -379,7 +379,7 @@ export default function RaycastAIPage() {
               </article>
             ))}
           </div>
-          <Link href="https://raycast.com/privacy" className="ai-inline-link ai-inline-link-block">
+          <Link href="/pricing" className="ai-inline-link ai-inline-link-block">
             Learn more about Raycast AI Privacy &amp; Security
           </Link>
         </div>

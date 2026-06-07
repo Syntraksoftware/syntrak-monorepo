@@ -108,7 +108,7 @@ export default function Enterprise() {
           <h2 className="text-2xl font-medium text-[#f4f4f6]">Ready to get started?</h2>
           <p className="mt-3 text-[#9c9c9d]">Contact our enterprise team to discuss your needs.</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="mailto:enterprise@raycast.com" className="raycast-btn-light">
+            <Link href="mailto:hello@syntrak.com" className="raycast-btn-light">
               Contact Sales
             </Link>
             <Link href="/pricing" className="raycast-btn-secondary">

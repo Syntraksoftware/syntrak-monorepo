@@ -14,15 +14,10 @@ function media(path: string) {
 
 function AppStoreCTA({ className = "" }: { className?: string }) {
   return (
-    <a
-      href="https://apps.apple.com/app/raycast/id6744870016"
-      className={`raycast-btn-light ${className}`.trim()}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link href="/#download" className={`raycast-btn-light ${className}`.trim()}>
       <AppleIcon />
       Get it today
-    </a>
+    </Link>
   );
 }
 

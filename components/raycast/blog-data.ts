@@ -1,3 +1,9 @@
+import {
+  createPlaceholderContent,
+  sampleBlogPostContent,
+  type BlogContentBlock,
+} from "./blog-post-content";
+
 export type BlogCategory = "news" | "company" | "craft" | "resources";
 
 export type BlogPost = {
@@ -5,10 +11,13 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   date: string;
+  dateTime?: string;
   category: BlogCategory;
   featured?: boolean;
   cover?: string;
   authors?: string[];
+  authorNames?: string[];
+  content?: BlogContentBlock[];
 };
 
 export const blogCategories: { id: BlogCategory | "all"; label: string }[] = [
@@ -19,9 +28,20 @@ export const blogCategories: { id: BlogCategory | "all"; label: string }[] = [
   { id: "resources", label: "Resources" },
 ];
 
-export const RAYCAST_BLOG_MEDIA = "https://www.raycast.com/_next/static/media";
+export { TEMPLATE_MEDIA as RAYCAST_BLOG_MEDIA } from "./template-media";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "we-hack-every-friday",
+    title: "We hack every Friday",
+    excerpt: "How it works, why it matters and what we've done so far.",
+    date: "June 22, 2022",
+    dateTime: "2022-06-22",
+    category: "company",
+    authors: ["author-thomas-paul-mann.65128b99.jpeg"],
+    authorNames: ["Thomas Paul Mann"],
+    content: sampleBlogPostContent,
+  },
   {
     slug: "the-new-raycast",
     title: "The New Raycast",
@@ -171,3 +191,19 @@ export const blogPosts: BlogPost[] = [
     authors: ["author-thomas-paul-mann.65128b99.jpeg", "author-pedro-duarte.b1dc86c4.jpeg"],
   },
 ];
+
+const blogPostsBySlug = new Map(blogPosts.map((post) => [post.slug, post]));
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return blogPostsBySlug.get(slug);
+}
+
+export function getBlogPostContent(post: BlogPost): BlogContentBlock[] {
+  if (post.content) return post.content;
+  return createPlaceholderContent(post.title, post.excerpt);
+}
+
+export function getBlogAuthorNames(post: BlogPost): string[] {
+  if (post.authorNames?.length) return post.authorNames;
+  return ["Raycast Team"];
+}

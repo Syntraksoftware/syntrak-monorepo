@@ -13,18 +13,6 @@ const nextConfig = {
   // Image optimization (enabled by default on Vercel)
   images: {
     unoptimized: false,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "misc-assets.raycast.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "www.raycast.com",
-        pathname: "/_next/static/media/**",
-      },
-    ],
   },
   // Disable powered by header
   poweredByHeader: false,
