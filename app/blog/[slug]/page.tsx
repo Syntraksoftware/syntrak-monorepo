@@ -17,11 +17,10 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const post = getBlogPostBySlug(slug);
 
   if (!post) {
-    return { title: "Post not found" };
+    return {};
   }
 
   return {
-    title: `${post.title} - Raycast Blog`,
     description: post.excerpt,
   };
 }

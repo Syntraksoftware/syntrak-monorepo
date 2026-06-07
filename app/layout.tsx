@@ -11,7 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Syntrak AI Powered Motion Wearables",
+  title: {
+    absolute: "Syntrak AI powered motion wearables",
+  },
   description:
     "World's first smart performance thermals with embedded motion capture and AI coaching for skiers and snowboarders",
   icons: {

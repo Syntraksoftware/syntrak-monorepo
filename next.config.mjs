@@ -29,6 +29,11 @@ const nextConfig = {
         destination: "/users/sign_in",
         permanent: true,
       },
+      {
+        source: "/pro",
+        destination: "/research",
+        permanent: true,
+      },
     ];
   },
 };

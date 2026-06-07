@@ -6,7 +6,7 @@ const footerColumns = [
     title: "Product",
     links: [
       { label: "AI Coaching", href: "/ai" },
-      { label: "Syntrak Pro", href: "/pro" },
+      { label: "Research", href: "/research" },
       { label: "Mobile App", href: "/ios" },
       { label: "Pricing", href: "/pricing" },
     ],

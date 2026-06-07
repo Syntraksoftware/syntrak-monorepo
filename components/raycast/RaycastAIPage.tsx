@@ -11,7 +11,7 @@ import {
   RAYCAST_AI_MEDIA,
 } from "./ai-data";
 import RaycastAIFAQ from "./RaycastAIFAQ";
-import RaycastProModels from "./RaycastProModels";
+import RaycastAIModels from "./RaycastAIModels";
 import { AppleIcon } from "./icons";
 
 function ExtensionMarquee() {
@@ -282,8 +282,8 @@ export default function RaycastAIPage() {
                 Create custom coaching presets tailored to your technique, terrain preference, and
                 skill level — and refine them as you improve.
               </p>
-              <Link href="/pro" className="ai-inline-link">
-                Explore Pro
+              <Link href="/research" className="ai-inline-link">
+                Explore Research
               </Link>
             </div>
             <Image
@@ -359,7 +359,7 @@ export default function RaycastAIPage() {
         <div className="ai-section-inner">
           <p className="ai-eyebrow ai-eyebrow-center">Coaching Engine</p>
         </div>
-        <RaycastProModels />
+        <RaycastAIModels />
       </div>
 
       <section className="ai-section ai-section-muted">

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import {
-  proModelProviders,
-  proModelsByProvider,
-  type ProModelProvider,
-} from "./pro-data";
+  aiModelProviders,
+  aiModelsByProvider,
+  type AIModelProvider,
+} from "./ai-models-data";
 
 function Rating({ value, of = 5 }: { value: number; of?: number }) {
   return (
@@ -17,9 +17,9 @@ function Rating({ value, of = 5 }: { value: number; of?: number }) {
   );
 }
 
-export default function RaycastProModels() {
-  const [activeProvider, setActiveProvider] = useState<ProModelProvider>("openai");
-  const models = proModelsByProvider[activeProvider];
+export default function RaycastAIModels() {
+  const [activeProvider, setActiveProvider] = useState<AIModelProvider>("openai");
+  const models = aiModelsByProvider[activeProvider];
   const hasAdvanced = models.some((model) => model.advanced);
 
   return (
@@ -29,15 +29,15 @@ export default function RaycastProModels() {
           <h2>One garment.</h2>
           <p>8+ sensors.</p>
           <p className="pro-section-copy">
-            Every sensor feeds into coaching models tuned for <em>alpine skiing biomechanics</em>, 
+            Every sensor feeds into coaching models tuned for <em>alpine skiing biomechanics</em>,
             from edge angles to centre-of-mass tracking.
           </p>
         </div>
 
         <div className="pro-models-panel">
           <div className="pro-models-tabs-wrap">
-            <div className="pro-models-tabs" role="tablist" aria-label="AI providers">
-              {proModelProviders.map((provider) => (
+            <div className="pro-models-tabs" role="tablist" aria-label="AI model providers">
+              {aiModelProviders.map((provider) => (
                 <button
                   key={provider.id}
                   type="button"

@@ -1,4 +1,4 @@
-export type ProModel = {
+export type AIModel = {
   name: string;
   speed: number;
   intelligence: number;
@@ -6,7 +6,7 @@ export type ProModel = {
   advanced?: boolean;
 };
 
-export const proModelProviders = [
+export const aiModelProviders = [
   { id: "openai", label: "OpenAI" },
   { id: "mistral", label: "Mistral" },
   { id: "perplexity", label: "Perplexity" },
@@ -20,9 +20,9 @@ export const proModelProviders = [
   { id: "minimax", label: "MiniMax" },
 ] as const;
 
-export type ProModelProvider = (typeof proModelProviders)[number]["id"];
+export type AIModelProvider = (typeof aiModelProviders)[number]["id"];
 
-export const proModelsByProvider: Record<ProModelProvider, ProModel[]> = {
+export const aiModelsByProvider: Record<AIModelProvider, AIModel[]> = {
   openai: [
     { name: "GPT-5 mini", speed: 5, intelligence: 4, context: "400k" },
     { name: "GPT-4.1", speed: 4, intelligence: 5, context: "1M", advanced: true },
@@ -64,48 +64,3 @@ export const proModelsByProvider: Record<ProModelProvider, ProModel[]> = {
   baseten: [{ name: "Kimi K2.6 (Baseten)", speed: 4, intelligence: 5, context: "256k", advanced: true }],
   minimax: [{ name: "MiniMax M2.5 (Baseten)", speed: 4, intelligence: 4, context: "256k", advanced: true }],
 };
-
-export const proProductivityFeatures = [
-  {
-    id: "translator",
-    title: "Hear it on every turn.",
-    subtitle: "Real-time audio coaching streams personalised cues to your earbuds — under 10 ms from sensor to sound.",
-    label: "Audio Coaching",
-    image: "translator-graphic.6f2faef3.png",
-    icon: "command-translator-icon-16.60865da6.png",
-  },
-  {
-    id: "cloud-sync",
-    title: "Stay in sync.",
-    subtitle: "Cloud Sync keeps your sessions, progress, and coaching history consistent across every device.",
-    label: "Cloud Sync",
-    image: "quick-ai-mobile.a1c4047f.png",
-    icon: "command-cloud-sync-16.9f8dc93f.png",
-  },
-  {
-    id: "clipboard",
-    title: "Never lose a run.",
-    subtitle: "With unlimited 3D playback, revisit any session — from your best turns to the ones that need work.",
-    label: "3D Playback",
-    image: "quick-ai-mobile.a1c4047f.png",
-    icon: "command-clipboard-history-16.41c42c43.png",
-  },
-  {
-    id: "windows",
-    title: "Track what matters.",
-    subtitle: "Edge angle consistency, centre-of-mass tracking, and personalised drill recommendations.",
-    label: "Advanced Metrics",
-    image: "app-window-item0.6d89dad5.jpg",
-    icon: "command-window-management-16.19cfb07d.png",
-  },
-  {
-    id: "notes",
-    title: "Train with purpose.",
-    subtitle: "Progress tracking and session summaries help you see improvement run after run, season after season.",
-    label: "Progress Tracking",
-    image: "quick-ai-mobile.a1c4047f.png",
-    icon: "command-cloud-sync-16.9f8dc93f.png",
-  },
-];
-
-export { TEMPLATE_MEDIA as RAYCAST_PRO_MEDIA } from "./template-media";

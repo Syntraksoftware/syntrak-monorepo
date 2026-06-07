@@ -2,45 +2,53 @@ import { syntrakFaqs } from "./syntrak-faqs";
 
 export { TEMPLATE_MEDIA as RAYCAST_IOS_MEDIA } from "./template-media";
 
-export const iosPresets = [
+export const iosModelPresets = [
+  "Syntrak AI",
   "Carving Coach",
-  "Mogul Technique",
   "Edge Angle",
-  "Powder Form",
-  "Parallel Turns",
+  "Mogul Technique",
   "Session Review",
   "Drill Plan",
-  "Progress Tracker",
-  "COM Balance",
-  "Turn Analysis",
   "Form Score",
+  "Progress Tracker",
+  "Turn Analysis",
   "Audio Cues",
+  "COM Balance",
+  "Powder Form",
+];
+
+export const iosKeyboardSlides = [
+  "keyboard-recents",
+  "keyboard-ai",
+  "keyboard-snippets",
+  "keyboard-quicklinks",
+  "keyboard-dictation",
 ];
 
 export const iosIntegrations = [
   {
     title: "Widgets",
     description:
-      "See your latest form score and session summary on your Home Screen — or check in from your Lock Screen before hitting the slopes.",
-    image: "widgets-bg.402d71e4.png",
+      "Bring your favorites to your Home Screen for even faster access. Or launch commands from your Lock Screen.",
+    variant: "widgets" as const,
   },
   {
     title: "Shortcuts",
     description:
-      "Start a coaching session, review your last run, or check progress with a single tap — or build Syntrak into your morning routine.",
-    image: "shortcuts.2b54ef2f.png",
+      "We've bundled a bunch of Shortcuts, allowing you to get started straight away, or integrate Syntrak features into more complex workflows.",
+    variant: "default" as const,
   },
   {
     title: "Controls",
     description:
-      "Add Syntrak to your Control Center or Lock Screen — start a session, check form score, or review today's summary instantly.",
-    image: "controls.630df93f.png",
+      "New for iOS 18, update your Control Center or Lock Screen with useful controls — start a session or open session review.",
+    variant: "controls" as const,
   },
   {
     title: "Action Button",
     description:
-      "Start a coaching session or hear your latest form score with one press — your Action button, repurposed for the mountain.",
-    image: "activity-sheet.f2f38f7d.png",
+      "Don't have a use for your Action button? Now you do — start coaching instantly or use any other Syntrak action.",
+    variant: "action" as const,
   },
 ];
 

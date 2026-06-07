@@ -10,8 +10,9 @@ import { AppleIcon } from "./icons";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Coaching", href: "/ai" },
-  { label: "Pro", href: "/pro" },
+  { label: "Research", href: "/research" },
   { label: "App", href: "/ios" },
+  { label: "Enterprise", href: "/enterprise" },
   { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
 ];

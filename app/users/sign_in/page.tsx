@@ -3,8 +3,7 @@ import RaycastPageShell from "@/components/raycast/RaycastPageShell";
 import RaycastSignInForm from "@/components/raycast/RaycastSignInForm";
 
 export const metadata: Metadata = {
-  title: "Raycast Login: Access Your Tools and Extensions",
-  description: "Log in to Raycast with a magic link sent to your email.",
+  description: "Log in to Syntrak with a magic link sent to your email.",
 };
 
 export default function SignInPage() {

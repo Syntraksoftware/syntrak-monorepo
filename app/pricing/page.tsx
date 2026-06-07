@@ -7,7 +7,6 @@ import RaycastPricingFAQ from "@/components/raycast/RaycastPricingFAQ";
 import RaycastPricingTable from "@/components/raycast/RaycastPricingTable";
 
 export const metadata: Metadata = {
-  title: "Syntrak Pricing: Starter Free with Garment or Pro Coaching from $10/month",
   description:
     "Starter includes basic motion tracking and daily summaries with your Syntrak garment. Upgrade to Pro for real-time audio coaching, unlimited 3D playback, and advanced metrics.",
 };
