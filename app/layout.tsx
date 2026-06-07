@@ -11,16 +11,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Raycast - Your shortcut to everything",
+  title: "Syntrak - AI powered Motion Wearables",
   description:
-    "A collection of powerful productivity tools all within an extendable launcher.",
+    "World's first smart performance thermals with embedded motion capture and AI coaching for skiers and snowboarders",
   icons: {
     icon: [
-      { url: "/syntrak-logo.png", sizes: "192x192", type: "image/png" },
-      { url: "/syntrak-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/logos/white_logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/logos/white_logo.png", sizes: "512x512", type: "image/png" },
     ],
     apple: [
-      { url: "/syntrak-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/logos/white_logo.png", sizes: "180x180", type: "image/png" },
     ],
   },
 };

@@ -47,7 +47,7 @@ export default function RaycastFooter() {
               <RaycastLogoIcon className="h-10 w-10" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-[#9c9c9d]">
-              Your shortcut to everything.
+              See Every Movement. Master Every Run.
             </p>
           </div>
           {footerColumns.map((col) => (

@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "tunnel": "ngrok http 3000",
+    "dev:tunnel": "ngrok http 3000",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

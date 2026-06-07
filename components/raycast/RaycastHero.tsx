@@ -7,11 +7,10 @@ export default function RaycastHero() {
 
       <div className="relative mx-auto max-w-[1200px] px-6 text-center lg:px-8">
         <h1 className="raycast-display mx-auto max-w-[800px] text-balance">
-          Your shortcut to everything.
+          See Every Movement. Master Every Run.
         </h1>
         <p className="mx-auto mt-5 max-w-[560px] text-lg leading-relaxed text-[#cdcdcd]">
-          A collection of powerful productivity tools all within an extendable
-          launcher. Fast, ergonomic and reliable.
+          AI powered biomechanical coaching, embedded invisibily in your base layer. Real time insights. Every turn, every mountain. 
         </p>
 
         <div id="download" className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -26,26 +25,11 @@ export default function RaycastHero() {
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[13px] text-[#9c9c9d]">
-          <span>v1.104.19</span>
+          <span>v0.0.1</span>
           <span>macOS 13+</span>
-          <button type="button" className="underline-offset-2 hover:underline">
-            Install via homebrew
-          </button>
-        </div>
-
-        <div className="mt-8 flex justify-center">
-          <a
-            href="#new"
-            className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] px-4 py-2 text-sm text-[#cdcdcd] transition-colors hover:border-[rgba(255,255,255,0.16)]"
-          >
-            <span>Try the new Raycast</span>
-            <span className="inline-flex items-center gap-1 text-[#9c9c9d]">
-              Learn more
-              <ArrowRightIcon />
-            </span>
-          </a>
         </div>
       </div>
+
 
       <div className="relative mx-auto mt-14 max-w-[980px] px-6 lg:px-8">
         <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset]">
@@ -59,10 +43,10 @@ export default function RaycastHero() {
           </div>
           <div className="space-y-1 p-3">
             {[
-              { icon: "⌘", title: "Open Raycast", sub: "Application" },
-              { icon: "AI", title: "Ask AI", sub: "Quick AI" },
-              { icon: "↗", title: "Create Issue", sub: "Linear" },
-              { icon: "♪", title: "Play Music", sub: "Spotify" },
+              { icon: "⌘", title: "Open Syntrak", sub: "Application" },
+              { icon: "AI", title: "Ask AI", sub: "Real time coaching" },
+              { icon: "↗", title: "Track your progress", sub: "Every turn, every mountain" },
+              { icon: "♪", title: "See your biomechanics", sub: "Invisible, but powerful" },
             ].map((item) => (
               <div
                 key={item.title}

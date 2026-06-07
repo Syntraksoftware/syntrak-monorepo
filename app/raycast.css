@@ -143,6 +143,17 @@ body:has(.raycast-site)::after {
   align-items: center;
 }
 
+.raycast-navbar-logo-image {
+  display: block;
+  width: auto;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.raycast-navbar-logo:hover .raycast-navbar-logo-image {
+  transform: scale(1.05);
+}
+
 .raycast-logo-icon,
 .raycast-logo-full {
   height: 24px;
@@ -379,6 +390,10 @@ body:has(.raycast-site)::after {
 }
 
 @media (min-width: 1064px) {
+  .raycast-navbar-logo-image {
+    height: 28px;
+  }
+
   .raycast-logo-full {
     display: block;
   }

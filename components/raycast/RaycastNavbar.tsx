@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { RaycastLogoFull, RaycastLogoIcon, AppleIcon } from "./icons";
+import { AppleIcon } from "./icons";
 
 const navLinks = [
   { label: "AI", href: "/ai" },
@@ -52,9 +53,15 @@ export default function RaycastNavbar() {
     >
       <div className={`raycast-navbar ${menuOpen ? "raycast-navbar-expanded" : ""}`}>
         <div className="raycast-navbar-top">
-          <Link href="/" className="raycast-navbar-logo" aria-label="Raycast home">
-            <RaycastLogoIcon className="raycast-logo-icon" />
-            <RaycastLogoFull className="raycast-logo-full" />
+          <Link href="/" className="raycast-navbar-logo" aria-label="Syntrak home">
+            <Image
+              src="/logos/white_logo.png"
+              alt="Syntrak"
+              width={132}
+              height={32}
+              className="raycast-navbar-logo-image"
+              priority
+            />
           </Link>
           <NavToggle open={menuOpen} onClick={() => setMenuOpen((open) => !open)} />
         </div>
