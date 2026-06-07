@@ -1,185 +1,153 @@
 export { TEMPLATE_MEDIA as RAYCAST_AI_MEDIA } from "./template-media";
 
 export const aiHeroExtensions = [
-  "slack",
-  "github-copilot",
-  "jira",
-  "arc",
-  "whatsapp",
-  "todoist",
-  "linear",
-  "notion",
-  "spotify",
-  "calendar",
-  "messages",
-  "finder",
-  "weather",
-  "raycast-notes",
-  "focus",
-  "homeassistant",
+  "edge-angle",
+  "hip-rotation",
+  "com-balance",
+  "turn-radius",
+  "carving",
+  "parallel",
+  "moguls",
+  "powder",
+  "session-review",
+  "drill-plan",
+  "form-score",
+  "audio-cue",
+  "3d-playback",
+  "progress",
+  "biomechanics",
+  "sensors",
 ];
 
 export const aiChatSidebar = {
-  pinned: ["Project Assistant", "TypeScript Expert", "Cars Expert"],
+  pinned: ["Carving Coach", "Edge Angle Expert", "Mogul Technique"],
   today: [
     {
-      title: "San Francisco's Top Rated Restaurants",
+      title: "Review my last run on the blue run",
       preview:
-        "Based on recent reviews and ratings, here are San Francisco's top restaurants…",
+        "Your edge angle averaged 42° on the steeper sections — 8° more consistent than your previous session…",
     },
     {
-      title: "Are ice baths beneficial for recovery?",
+      title: "Why am I losing balance on turns?",
       preview:
-        "Research shows mixed benefits of ice baths for recovery. While cold water immersion can reduce muscle soreness…",
+        "Your centre of mass is shifting too early on initiation. Try delaying your hip rotation by 0.2 seconds…",
     },
     {
-      title: "Understanding LLMs",
+      title: "What drills should I do tomorrow?",
       preview:
-        "Large Language Models (LLMs) work by processing vast amounts of text data through neural networks…",
+        "Based on today's data, I recommend three carving drills focusing on outside ski pressure and hip alignment…",
     },
   ],
 };
 
 export const aiChatHighlights = [
   {
-    title: "The top models in one place",
-    description: "See supported models",
+    title: "Validated accuracy",
+    description: "93.4% exercise-classification accuracy",
     image: "presets.8531e451.png",
   },
   {
-    title: "Fine-tuned chat presets",
+    title: "Personalised coaching presets",
     description:
-      "Create customized chat presets tailored to your tasks with the large language model of choice.",
+      "Create customised coaching presets tailored to your technique, terrain, and skill level.",
     link: "Explore Presets",
     image: "preset-explorer.0d35ff26.png",
   },
   {
-    title: "Compare models",
+    title: "Compare sessions",
     description:
-      "Regenerate answers with another model mid-chat to always find the best response.",
+      "Overlay two runs side by side to see exactly where your form improved — or where it slipped.",
     image: "compare.11d1d0f2.png",
   },
   {
-    title: "Hassle-Free Attachments",
+    title: "Full session context",
     description:
-      "Chat with PDF documents, CSV files or anything you see on your screen. The Mac app integrates with your OS to easily bring in the right context at the right time.",
+      "Review every sensor reading, audio cue, and biomechanical data point from your session in one place.",
     image: "attachments.aece0b9d.png",
   },
 ];
 
 export const aiQuickFeatures = [
   {
-    title: "Instant access to AI",
+    title: "Instant coaching cues",
     description:
-      "Quick AI lives a single hotkey away — ready to quickly appear as a floating window above your other apps.",
+      "Audio feedback arrives in under 10 ms — fast enough to correct your form mid-turn.",
     image: "hotkey.48941975.png",
   },
   {
-    title: "Search the web",
-    description: "Get up-to-date information with inline references by enabling web search.",
+    title: "Offline on the mountain",
+    description: "Start a session without signal. The app processes everything on-device once paired.",
     image: "web-search.32ae1b19.png",
   },
   {
-    title: "Presets",
-    description: "Compare models and switch between presets without leaving your flow.",
+    title: "Session presets",
+    description: "Switch between coaching modes — carving, moguls, powder — without leaving your run.",
     image: "presets.8531e451.png",
   },
 ];
 
 export const aiExtensionRows = [
   [
-    "Calendar block my day from 4pm",
-    "Web get the raycast logo",
-    "Finder move all pdfs on my desktop to the trash",
-    "Weather in tokyo",
-    "Raycast Notes add 'buy milk' to my grocery list",
-    "Stable Diffusion make an image of a cat eating a pizza",
-    "Raycast Focus session for 30 minutes blocking Slack",
+    "Review my edge angles from run 3",
+    "Show my centre of mass on the steeps",
+    "Compare today vs last week",
+    "What was my form score?",
+    "Play back my best turn in 3D",
+    "Suggest drills for tomorrow",
+    "How consistent were my turns?",
   ],
   [
-    "Linear what are my current high priority issues?",
-    "Slack set my status to 'lunch' for 1h",
-    "Apple Notes what's on my grocery list?",
-    "Arc open wikipedia in space 'Work'",
-    "Things what are my todos for today?",
-    "Jira what are my issues?",
-    "Zoom start an instant meeting",
+    "Analyse my hip rotation timing",
+    "Where did I lose balance?",
+    "Track my progress this season",
+    "Summarise today's session",
+    "Show my carving vs parallel split",
+    "What should I focus on next?",
+    "Export my session data",
   ],
 ];
 
 export const aiCommands = [
   {
-    title: "Fix Spelling and Grammar",
-    description: "Clean up grammatical mistakes, spelling errors and typos.",
-    model: "GPT-4o mini",
+    title: "Analyse Turn Technique",
+    description: "Break down your edge angles, hip rotation, and weight distribution on a specific run.",
+    model: "Syntrak Core",
   },
   {
-    title: "Explain Code Step by Step",
-    description: "Break down how complex code works.",
-    model: "Claude 3.5 Haiku",
+    title: "Compare Two Sessions",
+    description: "Overlay biomechanical data from two runs to spot improvements and regressions.",
+    model: "Syntrak Core",
   },
   {
-    title: "Summarise webpage",
-    description: "TL;DR? Quickly find out what an article or page is about.",
-    model: "Claude 3.5 Haiku",
+    title: "Summarise Today's Session",
+    description: "Get a quick overview of distance, form scores, and key coaching moments.",
+    model: "Syntrak Core",
   },
   {
-    title: "Change Tone to Professional",
-    description: "Adjust your writing tone for professional communication.",
-    model: "Claude 3.5 Haiku",
+    title: "Recommend Training Drills",
+    description: "Receive personalised drills based on your weakest biomechanical patterns.",
+    model: "Syntrak Pro",
   },
 ];
 
 export const aiPrivacyItems = [
   {
-    title: "Local first",
+    title: "On-device by default",
     description:
-      "All your data is stored locally on your computer. If you enable Cloud Sync, AI Chats are saved on our servers, encrypted at rest and in transit.",
+      "All processing happens on your phone by default. Optional cloud sync is encrypted end-to-end, and you own your data.",
   },
   {
     title: "No model training",
     description:
-      "Our agreements with AI providers prohibit them from using any AI interactions to train their models.",
+      "Your biomechanical data and coaching sessions are never used to train third-party AI models.",
   },
   {
-    title: "Local models",
-    description: "For complete privacy — use a local model through our integration with Ollama",
+    title: "You control your data",
+    description: "Delete your data at any time. Export session history whenever you need it.",
   },
   {
-    title: "Private AI Extensions",
-    description: "Share custom AI Extensions privately within your team so everyone can stay productive.",
-  },
-];
-
-export const aiFaqs = [
-  {
-    question: "What is Raycast AI?",
-    answer:
-      "Raycast AI provides access to multiple LLMs from state-of-the-art providers, including OpenAI, Anthropic, Perplexity, and more. AI where it's most useful — on your OS.",
-  },
-  {
-    question: "What is free and paid in Raycast AI?",
-    answer:
-      "We provide a limited number of free messages to any Raycast user to give AI a try. To continue using Raycast AI, you can upgrade to a Pro plan with a 14 day free trial. Advanced AI models are only available as an add-on to the paid Pro plan.",
-  },
-  {
-    question: "Can I use my own OpenAI API key?",
-    answer:
-      "Yes, you can BYOK (Bring Your Own Key) — we currently support custom keys for OpenAI, Anthropic and Google.",
-  },
-  {
-    question: "Which model do you use for Raycast AI?",
-    answer:
-      "Raycast AI provides access to multiple LLMs from state-of-the-art providers, including OpenAI, Anthropic, Perplexity, and more. More advanced models are available as an add-on. Find out more on the Pricing page.",
-  },
-  {
-    question: "Can I upgrade my Team plan to use Advanced AI?",
-    answer:
-      "Yes! A Team Manager can add the Advanced AI add-on by going to their account settings. This will activate the add-on for all members of your team.",
-  },
-  {
-    question: "Does Raycast have a Student Program?",
-    answer:
-      "Yes, Raycast offers a Pro plan 50% discount to verified students. The student discount only applies to the Raycast Pro plan, and not the Advanced AI add-on.",
+    title: "Wash-safe sensors",
+    description:
+      "Textile electrodes rated at 97.7% reliability after 7+ wash cycles — no special handling needed.",
   },
 ];

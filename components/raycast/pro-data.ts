@@ -1,36 +1,3 @@
-export const proFaqs = [
-  {
-    question: "How do you handle my data?",
-    answer:
-      "We value privacy and never collect any sensitive information. None of your inputs are recorded or used to train models. All Raycast AI features are powered by different AI providers: OpenAI, Anthropic, Perplexity, Groq, Together AI, Mistral AI, Google (Gemini), xAI and Replicate. If Cloud Sync is enabled, all AI Chats are saved on our servers, encrypted at rest and in transit, so they can be accessed from any of your Macs.",
-  },
-  {
-    question: "What's the difference between the Pro and Team plan?",
-    answer:
-      "The Pro plan is for individuals. It includes Raycast AI, Cloud Sync and more. The Team plan is for organizations. On top of all Pro features, teams can share Extensions, Snippets and Quicklinks privately.",
-  },
-  {
-    question: "Can I use my own OpenAI API key?",
-    answer:
-      "Yes, you can BYOK (Bring Your Own Key) — we currently support custom keys for OpenAI, Anthropic and Google.",
-  },
-  {
-    question: "Which model do you use for Raycast AI?",
-    answer:
-      "Raycast AI provides access to multiple LLMs from state-of-the-art providers, including OpenAI, Anthropic, Perplexity, and more. More advanced models are available as an add-on. Find out more on the Pricing page.",
-  },
-  {
-    question: "Can I upgrade my Team plan to use Advanced AI?",
-    answer:
-      "Yes! A Team Manager can add the Advanced AI add-on by going to their account settings. Just keep in mind that this will activate the add-on for all the members of your team.",
-  },
-  {
-    question: "Does Raycast have a Student Program?",
-    answer:
-      "Yes, Raycast offers a Pro plan 50% discount to verified students. Please note that the student discount only applies to the Raycast Pro plan, and not the Advanced AI add-on.",
-  },
-];
-
 export type ProModel = {
   name: string;
   speed: number;
@@ -101,41 +68,41 @@ export const proModelsByProvider: Record<ProModelProvider, ProModel[]> = {
 export const proProductivityFeatures = [
   {
     id: "translator",
-    title: "Don't get lost in translation.",
-    subtitle: "Quickly translate text on the fly, check pronunciation or dictate your own words.",
-    label: "Translator",
+    title: "Hear it on every turn.",
+    subtitle: "Real-time audio coaching streams personalised cues to your earbuds — under 10 ms from sensor to sound.",
+    label: "Audio Coaching",
     image: "translator-graphic.6f2faef3.png",
     icon: "command-translator-icon-16.60865da6.png",
   },
   {
     id: "cloud-sync",
     title: "Stay in sync.",
-    subtitle: "Cloud Sync ensures your workflow is the same across multiple Macs.",
+    subtitle: "Cloud Sync keeps your sessions, progress, and coaching history consistent across every device.",
     label: "Cloud Sync",
     image: "quick-ai-mobile.a1c4047f.png",
     icon: "command-cloud-sync-16.9f8dc93f.png",
   },
   {
     id: "clipboard",
-    title: "Never forget.",
-    subtitle: "With unlimited Clipboard History you can find that image you copied last year.",
-    label: "Clipboard History",
+    title: "Never lose a run.",
+    subtitle: "With unlimited 3D playback, revisit any session — from your best turns to the ones that need work.",
+    label: "3D Playback",
     image: "quick-ai-mobile.a1c4047f.png",
     icon: "command-clipboard-history-16.41c42c43.png",
   },
   {
     id: "windows",
-    title: "Keep organized.",
-    subtitle: "Position and resize your windows with custom commands.",
-    label: "Custom Window Management",
+    title: "Track what matters.",
+    subtitle: "Edge angle consistency, centre-of-mass tracking, and personalised drill recommendations.",
+    label: "Advanced Metrics",
     image: "app-window-item0.6d89dad5.jpg",
     icon: "command-window-management-16.19cfb07d.png",
   },
   {
     id: "notes",
-    title: "Unlimited notes.",
-    subtitle: "Organize your thoughts and meeting notes without limits.",
-    label: "Raycast Notes",
+    title: "Train with purpose.",
+    subtitle: "Progress tracking and session summaries help you see improvement run after run, season after season.",
+    label: "Progress Tracking",
     image: "quick-ai-mobile.a1c4047f.png",
     icon: "command-cloud-sync-16.9f8dc93f.png",
   },

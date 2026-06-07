@@ -53,10 +53,10 @@ function ArrowRightIcon() {
 }
 
 const aiControlCenter = [
-  "Organization-Wide Toggle",
-  "Bring Your Own Keys",
-  "AI Provider Allow-List",
-  "Custom AI Provider",
+  "Organisation-Wide Reporting",
+  "Custom Integrations",
+  "API Access",
+  "Dedicated Support",
 ];
 
 const orgAdminControls = [
@@ -64,7 +64,7 @@ const orgAdminControls = [
   "Domain Capture",
   "Full Cloud Sync Control",
   "2FA Enforcement",
-  "Extensions Allow-List",
+  "Data Export Controls",
   "IP Allow-List",
 ];
 
@@ -74,25 +74,25 @@ export default function RaycastEnterpriseCard() {
       <div className="pricing-enterprise-card">
         <div className="pricing-enterprise-left">
           <div className="pricing-enterprise-header">
-            <h2>Raycast for Enterprise</h2>
-            <p>For advanced security and control</p>
+            <h2>Syntrak for Enterprise</h2>
+            <p>For ski resorts, academies, and training programmes</p>
           </div>
 
           <div className="pricing-enterprise-highlights">
             <div className="pricing-enterprise-highlight">
               <PlusCircleIcon />
-              <span>Everything in Teams Pro</span>
+              <span>Everything in Team Pro</span>
             </div>
             <div className="pricing-enterprise-highlight pricing-enterprise-highlight-white">
               <ShieldIcon />
-              <span>SOC2 Type II Compliant</span>
+              <span>End-to-end encrypted data</span>
               <ArrowRightIcon />
             </div>
           </div>
 
           <div className="pricing-enterprise-columns">
             <div>
-              <h3>AI Control Center:</h3>
+              <h3>Enterprise Analytics:</h3>
               <ul>
                 {aiControlCenter.map((item) => (
                   <li key={item}>
@@ -103,7 +103,7 @@ export default function RaycastEnterpriseCard() {
               </ul>
             </div>
             <div>
-              <h3>Organization Admin Controls:</h3>
+              <h3>Resort Admin Controls:</h3>
               <ul>
                 {orgAdminControls.map((item) => (
                   <li key={item}>

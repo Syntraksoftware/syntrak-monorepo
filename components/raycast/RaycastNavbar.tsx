@@ -8,9 +8,9 @@ import { createPortal } from "react-dom";
 import { AppleIcon } from "./icons";
 
 const navLinks = [
-  { label: "AI", href: "/ai" },
+  { label: "Coaching", href: "/ai" },
   { label: "Pro", href: "/pro" },
-  { label: "iOS", href: "/ios" },
+  { label: "App", href: "/ios" },
   { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
 ];
@@ -86,7 +86,7 @@ export default function RaycastNavbar() {
             </Link>
             <Link href="/#download" className="raycast-btn-light">
               <AppleIcon />
-              Download
+              Get the App
             </Link>
           </div>
           <div className="raycast-navbar-actions-medium">

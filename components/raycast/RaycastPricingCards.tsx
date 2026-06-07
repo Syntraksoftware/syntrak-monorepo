@@ -137,64 +137,61 @@ export default function RaycastPricingCards() {
     <section className="pricing-cards-section">
       <div className="pricing-cards-grid">
         <PlanCard
-          title="Raycast"
-          subtitle="Free, forever."
+          title="Starter"
+          subtitle="Free with garment."
           price="$0"
-          cta={{ label: "Download for Mac", href: "/#download", icon: "apple" }}
+          cta={{ label: "Get the App", href: "/#download", icon: "apple" }}
         >
           <FeatureItem title="Core features, including:">
-            Clipboard History, Quicklinks, Calculator, Snippets, Emoji Picker, Window
-            Management + many more...
+            Motion tracking, daily session summaries, distance logging, offline sessions + more…
           </FeatureItem>
-          <FeatureItem title="Raycast AI">
-            50 Free Messages. Try any Pro model. Or use your own API key (BYOK).
-          </FeatureItem>
-          <FeatureItem title="Raycast Notes">5 Free Notes</FeatureItem>
-          <FeatureItem title="Raycast for iOS" />
+          <FeatureItem title="3D Playback">1 free playback per day</FeatureItem>
+          <FeatureItem title="Syntrak App">iOS 16+ and Android 12+</FeatureItem>
+          <FeatureItem title="Data Retention">30 days</FeatureItem>
         </PlanCard>
 
         <PlanCard
-          title="Raycast Pro"
-          subtitle="AI at your fingertips"
-          price="$10"
+          title="Syntrak Pro"
+          subtitle="Full coaching experience"
+          price="$12"
           featured
           badge="pro"
           cta={{ label: "Select Plan", href: "/#download" }}
         >
-          <FeatureItem icon="plus" title="Everything in Free" />
+          <FeatureItem icon="plus" title="Everything in Starter" />
           <FeatureItem
-            title="Raycast AI"
+            title="Real-Time Audio Coaching"
             titleExtra={
               <>
-                <span className="pricing-plan-feature-inline">, including providers:</span>
+                <span className="pricing-plan-feature-inline">, powered by:</span>
                 <InfoIcon />
               </>
             }
           >
             <AiProviderLogoRow providers={proPlanProviders} />
             <Link href="/ai" className="pricing-plan-link">
-              Compare all models <InfoIcon />
+              Learn about coaching <InfoIcon />
             </Link>
           </FeatureItem>
           <FeatureItem title="Cloud Sync">
-            Sync Snippets, Notes, Chats with other Macs, and iOS
+            Sync sessions and progress across iOS, Android, and web
           </FeatureItem>
-          <FeatureItem title="Translator" />
+          <FeatureItem title="Unlimited 3D Playback" />
         </PlanCard>
 
         <PlanCard
-          title="Pro + Advanced AI"
-          subtitle="The most intelligent models"
+          title="Pro + Premium Coaching"
+          subtitle="The most advanced analysis"
           price="$20"
           badge="sparkle"
           cta={{ label: "Select Plan", href: "/#download" }}
         >
           <FeatureItem icon="plus" title="Everything in Pro" />
-          <FeatureItem title="Advanced AI Models">
-            <p>including the best models from:</p>
+          <FeatureItem title="Premium Coaching Models">
+            <p>including advanced analysis from:</p>
             <AiProviderLogoRow providers={advancedPlanProviders} />
             <Link href="/ai" className="pricing-plan-link">
-              Compare all models <InfoIcon />
+              Learn about coaching <InfoIcon />
             </Link>
           </FeatureItem>
         </PlanCard>

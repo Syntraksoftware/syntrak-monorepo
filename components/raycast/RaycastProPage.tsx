@@ -25,7 +25,7 @@ function ProCTAs() {
         Compare Plans
       </Link>
       <Link href="/pricing" className="pro-hero-price-link">
-        Starting at $8/month
+        Starting at $10/month
       </Link>
     </div>
   );
@@ -50,12 +50,12 @@ export default function RaycastProPage() {
         <div className="pro-section-inner pro-hero-content">
           <div className="pro-hero-badge">
             <ProBadge />
-            <span>Raycast Pro</span>
+            <span>Syntrak Pro</span>
           </div>
           <h1 className="pro-hero-title">New Level Unlocked</h1>
           <p className="pro-hero-description">
-            Turn Pro to harness the power of AI, make Raycast your own with custom themes, keep
-            your Macs in sync and more.
+            Turn Pro to unlock real-time audio coaching, unlimited 3D playback, advanced
+            biomechanical metrics, and full progress tracking across every run.
           </p>
           <ProCTAs />
         </div>
@@ -63,12 +63,12 @@ export default function RaycastProPage() {
 
       <section className="pro-ai-section">
         <div className="pro-section-inner">
-          <p className="pro-eyebrow">AI</p>
+          <p className="pro-eyebrow">Coaching</p>
         </div>
         <RaycastAI />
         <div className="pro-section-inner">
           <Link href="/ai" className="pro-more-link">
-            More about AI
+            More about coaching
           </Link>
         </div>
       </section>
@@ -77,14 +77,14 @@ export default function RaycastProPage() {
 
       <section className="pro-productivity-intro">
         <div className="pro-section-inner pro-section-title pro-section-title-center">
-          <h2>Put the Pro in Productivity.</h2>
-          <p>Raycast Pro is about more than just AI.</p>
+          <h2>Put the Pro in your skiing.</h2>
+          <p>Syntrak Pro is about more than just audio cues.</p>
           <div className="pro-hero-ctas pro-hero-ctas-center">
             <Link href="/pricing" className="raycast-btn-light">
               Compare Plans
             </Link>
             <Link href="/pricing" className="pro-hero-price-link">
-              Starting at $8/month
+              Starting at $10/month
             </Link>
           </div>
         </div>
@@ -128,10 +128,10 @@ export default function RaycastProPage() {
       <section className="pro-themes-section">
         <div className="pro-section-inner pro-feature-grid pro-feature-grid-reverse">
           <div className="pro-feature-copy">
-            <h2>Express yourself.</h2>
-            <p>Craft your own custom theme or choose one of hundreds from the community.</p>
+            <h2>Built to last.</h2>
+            <p>Textile electrodes rated at 97.7% reliability after 7+ wash cycles. Just toss it in with your tech-fabric load.</p>
             <div className="pro-feature-label">
-              <span>Custom Themes</span>
+              <span>Wash-Safe Sensors</span>
             </div>
           </div>
           <div className="pro-themes-visual">
@@ -159,7 +159,7 @@ export default function RaycastProPage() {
       <section className="pro-enterprise-cta">
         <div className="pro-section-inner">
           <p>
-            Want enterprise features?{" "}
+            Running a ski school or resort?{" "}
             <Link href="/enterprise">Contact us</Link>
           </p>
         </div>

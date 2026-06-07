@@ -7,9 +7,9 @@ import RaycastPricingFAQ from "@/components/raycast/RaycastPricingFAQ";
 import RaycastPricingTable from "@/components/raycast/RaycastPricingTable";
 
 export const metadata: Metadata = {
-  title: "Raycast Pricing: Free Forever or Pro with AI for $8/month",
+  title: "Syntrak Pricing: Starter Free with Garment or Pro Coaching from $10/month",
   description:
-    "Raycast is free forever. Upgrade to Pro for AI, Cloud Sync, and custom themes. Choose flexible plans for individuals or teams.",
+    "Starter includes basic motion tracking and daily summaries with your Syntrak garment. Upgrade to Pro for real-time audio coaching, unlimited 3D playback, and advanced metrics.",
 };
 
 export default function PricingPage() {

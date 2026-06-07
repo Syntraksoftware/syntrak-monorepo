@@ -56,30 +56,29 @@ function ChatMock() {
       <div className="ai-chat-main">
         <div className="ai-chat-header">
           <span>Project Assistant</span>
-          <span className="ai-chat-model">Ray-1</span>
+          <span className="ai-chat-model">Syntrak</span>
         </div>
         <div className="ai-chat-thread">
           <div className="ai-chat-bubble ai-chat-bubble-user">
-            Please give me an overview of my day
+            Review my last run on the blue slope
           </div>
           <div className="ai-chat-bubble ai-chat-bubble-ai">
-            <p>Here&apos;s an overview of your day:</p>
+            <p>Here&apos;s your run breakdown:</p>
             <p>
-              <strong>Calendar</strong>
+              <strong>Edge Angles</strong>
               <br />
-              You have two events today: 1:1 with Pedro at 12:30 and Tennis Practice at 18:00.
+              Averaged 42° on steeper sections — 8° more consistent than your previous session.
             </p>
             <p>
-              <strong>Linear Issues</strong>
+              <strong>Coaching Cues</strong>
               <br />
-              Update design system typography scales, develop accessible tooltip system, fix Safari
-              CSS glitches.
+              Delay hip rotation by 0.2s on initiation. Increase outside ski pressure through the apex.
             </p>
           </div>
         </div>
         <div className="ai-chat-composer">
-          <span>Ask AI anything…</span>
-          <span className="ai-chat-submit">Submit Actions ⌘K</span>
+          <span>Ask about your technique…</span>
+          <span className="ai-chat-submit">Analyse Run</span>
         </div>
       </div>
     </div>
@@ -95,7 +94,7 @@ function ExtensionScroller({ items }: { items: string[] }) {
         {doubled.map((item, index) => (
           <div key={`${item}-${index}`} className="ai-extension-card">
             <span className="ai-extension-card-text">{item}</span>
-            <span className="ai-extension-card-cta">Add to Raycast</span>
+            <span className="ai-extension-card-cta">Analyse</span>
           </div>
         ))}
       </div>
@@ -122,21 +121,21 @@ export default function RaycastAIPage() {
         <div className="ai-section-inner ai-hero-content">
           <ExtensionMarquee />
           <h1 className="ai-hero-title">
-            AI that works
+            Coaching that works
             <br />
-            with your OS
+            on the mountain
           </h1>
           <p className="ai-hero-description">
-            Raycast AI combines leading models with powerful extensions — right on your OS
+            Syntrak combines 200+ embedded sensors with AI coaching — streaming personalised cues to your earbuds in real time
           </p>
           <div className="ai-hero-ctas">
             <Link href="/#download" className="raycast-btn-light">
               <AppleIcon />
-              Download
+              Get the App
             </Link>
             <span className="ai-hero-or">or</span>
-            <Link href="/ai" className="ai-hero-browser-link">
-              Try in Browser
+            <Link href="/pricing" className="ai-hero-browser-link">
+              View Pricing
             </Link>
           </div>
         </div>
@@ -145,12 +144,12 @@ export default function RaycastAIPage() {
       <section className="ai-section">
         <div className="ai-section-inner ai-split">
           <div className="ai-section-copy">
-            <p className="ai-eyebrow">AI Chat</p>
-            <h2>Meet your new virtual assistant</h2>
+            <p className="ai-eyebrow">Session Review</p>
+            <h2>Meet your personal ski coach</h2>
             <p>
-              Stuck while coding? Need help planning your day?
+              Unsure why a turn felt off? Want to compare runs?
               <br />
-              Chat with 32+ different models in one familiar interface.
+              Review biomechanical data and get coaching feedback in one familiar interface.
             </p>
           </div>
           <ChatMock />
@@ -184,8 +183,7 @@ export default function RaycastAIPage() {
 
           <figure className="ai-quote">
             <blockquote>
-              &ldquo;Raycast is incrementally turning my Mac into an AI-native operating system and
-              I&apos;m so here for it.&rdquo;
+              &ldquo;It&apos;s like having a coach in my ear on every run — but I can&apos;t even see it&apos;s there.&rdquo;
             </blockquote>
             <figcaption>
               <Image
@@ -196,8 +194,8 @@ export default function RaycastAIPage() {
                 className="ai-quote-avatar"
               />
               <div>
-                <strong>Guillermo Rauch</strong>
-                <span>CEO, Vercel</span>
+                <strong>Founders Edition Beta Tester</strong>
+                <span>Alpine Skier, Colorado</span>
               </div>
             </figcaption>
           </figure>
@@ -207,11 +205,11 @@ export default function RaycastAIPage() {
       <section className="ai-section">
         <div className="ai-section-inner ai-split">
           <div className="ai-section-copy">
-            <p className="ai-eyebrow">Quick AI</p>
-            <h2>Ask anything, anytime, anywhere</h2>
+            <p className="ai-eyebrow">Real-Time Coaching</p>
+            <h2>Hear it on every turn</h2>
             <p>
-              Quick AI combines the power of AI with the web to answer any question in a light and
-              unobtrusive interface
+              Audio cues arrive in under 10 ms — personalised feedback streamed straight to your
+              earbuds while you ski
             </p>
           </div>
           <div className="ai-code-block">
@@ -243,11 +241,11 @@ export default function RaycastAIPage() {
       <section className="ai-section ai-section-muted">
         <div className="ai-section-inner">
           <div className="ai-section-copy ai-section-copy-center">
-            <p className="ai-eyebrow">AI Extensions</p>
-            <h2>Interact Naturally</h2>
+            <p className="ai-eyebrow">Coaching Commands</p>
+            <h2>Analyse naturally</h2>
             <p>
-              AI Extensions turn your everyday language into actions and answers — from renaming
-              files to checking Linear tickets.
+              Ask about your technique in plain language — from edge angles and hip rotation to
+              session comparisons and drill recommendations.
             </p>
           </div>
 
@@ -258,14 +256,14 @@ export default function RaycastAIPage() {
           </div>
 
           <p className="ai-extension-tip">
-            TIP Combine multiple AI Extensions to create advanced workflows
+            TIP Combine multiple coaching commands to build a complete post-run review
           </p>
 
           <div className="ai-store-row">
             <div>
-              <h3>Explore the community of third party Extensions in the Raycast Store.</h3>
+              <h3>Explore every metric your garment captures — from sensors to coaching cues.</h3>
               <Link href="/#store" className="ai-inline-link">
-                Explore AI Extensions
+                Explore Features
               </Link>
             </div>
             <Image
@@ -279,13 +277,13 @@ export default function RaycastAIPage() {
 
           <div className="ai-store-row ai-store-row-reverse">
             <div>
-              <h3>...or build your own</h3>
+              <h3>...or train your way</h3>
               <p>
-                Create your own AI Extension to support your own use case, and optionally publish
-                it to the Store for everyone to use.
+                Create custom coaching presets tailored to your technique, terrain preference, and
+                skill level — and refine them as you improve.
               </p>
-              <Link href="/ai" className="ai-inline-link">
-                Explore Docs
+              <Link href="/pro" className="ai-inline-link">
+                Explore Pro
               </Link>
             </div>
             <Image
@@ -302,14 +300,14 @@ export default function RaycastAIPage() {
       <section className="ai-section">
         <div className="ai-section-inner ai-split">
           <div className="ai-section-copy">
-            <p className="ai-eyebrow">AI Commands</p>
-            <h2>Your automation assistant</h2>
+            <p className="ai-eyebrow">Coaching Commands</p>
+            <h2>Your technique assistant</h2>
             <p>
-              Automate repetitive tasks and eliminate chores by creating AI Commands that can be
-              invoked with a single hotkey.
+              Analyse runs, compare sessions, and get drill recommendations — all from built-in
+              coaching commands in the Syntrak app.
             </p>
             <p className="ai-section-subcopy">
-              Choose from 30+ built-in commands or create your own tailored to your specific flows.
+              Choose from built-in commands or create your own presets tailored to your skiing style.
             </p>
           </div>
           <Image
@@ -323,25 +321,25 @@ export default function RaycastAIPage() {
 
         <figure className="ai-quote ai-quote-compact">
           <blockquote>
-            &ldquo;Having AI integrated in the OS is the future that Raycast enables today.&rdquo;
-          </blockquote>
-          <figcaption>
-            <Image
-              src={`${RAYCAST_AI_MEDIA}/koen.6d1f621a.png`}
-              alt=""
-              width={40}
-              height={40}
-              className="ai-quote-avatar"
-            />
-            <div>
-              <strong>Koen Bok</strong>
-              <span>Founder, Framer</span>
+            &ldquo;The 3D playback alone changed how I review my skiing — I can finally see what my coach has been telling me.&rdquo;
+            </blockquote>
+            <figcaption>
+              <Image
+                src={`${RAYCAST_AI_MEDIA}/koen.6d1f621a.png`}
+                alt=""
+                width={40}
+                height={40}
+                className="ai-quote-avatar"
+              />
+              <div>
+                <strong>Founders Edition Beta Tester</strong>
+                <span>Ski Instructor, Switzerland</span>
             </div>
           </figcaption>
         </figure>
 
         <div className="ai-section-inner">
-          <h3 className="ai-commands-grid-title">Explore AI Commands</h3>
+          <h3 className="ai-commands-grid-title">Explore Coaching Commands</h3>
           <div className="ai-commands-grid">
             {aiCommands.map((command) => (
               <article key={command.title} className="ai-command-card">
@@ -352,14 +350,14 @@ export default function RaycastAIPage() {
             ))}
           </div>
           <Link href="/ai" className="ai-inline-link ai-inline-link-block">
-            Explore AI Commands
+            Explore Coaching Commands
           </Link>
         </div>
       </section>
 
       <div className="ai-models-wrap">
         <div className="ai-section-inner">
-          <p className="ai-eyebrow ai-eyebrow-center">AI Models</p>
+          <p className="ai-eyebrow ai-eyebrow-center">Coaching Engine</p>
         </div>
         <RaycastProModels />
       </div>
@@ -369,7 +367,7 @@ export default function RaycastAIPage() {
           <div className="ai-section-copy ai-section-copy-center">
             <p className="ai-eyebrow">Privacy</p>
             <h2>Your data is yours</h2>
-            <p>Raycast AI is designed with privacy in mind, ensuring your details remain safe.</p>
+            <p>Syntrak is designed with privacy in mind — your biomechanical data stays yours.</p>
           </div>
           <div className="ai-privacy-grid">
             {aiPrivacyItems.map((item) => (
@@ -380,7 +378,7 @@ export default function RaycastAIPage() {
             ))}
           </div>
           <Link href="/pricing" className="ai-inline-link ai-inline-link-block">
-            Learn more about Raycast AI Privacy &amp; Security
+            Learn more about Syntrak Privacy &amp; Security
           </Link>
         </div>
       </section>
@@ -388,7 +386,7 @@ export default function RaycastAIPage() {
       <section className="ai-enterprise-cta">
         <div className="ai-section-inner">
           <p>
-            Want enterprise features? <Link href="/enterprise">Contact us</Link>
+            Running a ski school or resort? <Link href="/enterprise">Contact us</Link>
           </p>
         </div>
       </section>

@@ -4,54 +4,54 @@ import Link from "next/link";
 export default function Enterprise() {
   const features = [
     {
-      title: "Advanced Security",
+      title: "Coach Dashboard",
       description:
-        "SOC 2 Type 2, ISO 27001, GDPR, HIPAA compliant. Enterprise-grade security for your sensitive data.",
+        "Monitor athlete progress, assign training plans, and review biomechanical data across your entire programme.",
     },
     {
       title: "SSO & Admin Controls",
       description:
-        "Single Sign-On (SSO) integration, centralized admin dashboard, and granular permission controls.",
+        "Single Sign-On integration, centralised admin dashboard, and granular permission controls for your staff.",
     },
     {
       title: "Custom Integrations",
       description:
-        "Integrate with your existing tools like Slack, Salesforce, Microsoft Teams, and more.",
+        "Connect Syntrak with your existing resort systems, booking platforms, and athlete management tools.",
     },
     {
       title: "Dedicated Support",
       description:
-        "24/7 priority support with dedicated account manager and SLA guarantees.",
+        "Priority support with a dedicated account manager and SLA guarantees for your organisation.",
     },
     {
-      title: "Team Collaboration",
+      title: "Team Training Plans",
       description:
-        "Share notes across teams, collaborate in real-time, and manage team access.",
+        "Share coaching programmes across coaches and athletes, with unlimited shared plans on Team Pro.",
     },
     {
-      title: "Custom Training",
+      title: "Onboarding & Training",
       description:
-        "Onboarding sessions, custom training programs, and best practices workshops.",
+        "Onboarding sessions for your coaching staff, custom training programmes, and best-practice workshops.",
     },
   ];
 
   const certifications = [
-    "SOC 2 Type 1",
-    "SOC 2 Type 2",
-    "ISO 27001",
-    "GDPR",
-    "CCPA",
-    "HIPAA",
+    "End-to-end encryption",
+    "On-device processing",
+    "GDPR compliant",
+    "Data export controls",
+    "2FA enforcement",
+    "IP allow-list",
   ];
 
   return (
     <RaycastPageShell>
       <section className="pro-section-inner pb-20 pt-4 md:pb-24">
         <div className="pro-section-title pro-section-title-center">
-          <h1 className="raycast-display">Raycast for Enterprise</h1>
+          <h1 className="raycast-display">Syntrak for Enterprise</h1>
           <p>
-            Trusted by leading companies worldwide. Enterprise-grade security, compliance, and
-            support for your organization.
+            Built for ski resorts, academies, and training programmes. Enterprise-grade analytics,
+            admin controls, and support for your organisation.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function Enterprise() {
           <div className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-8">
             <h2 className="text-2xl font-medium text-[#f4f4f6]">ROI Calculator</h2>
             <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">
-              Calculate how much time and money Raycast can save your team.
+              Calculate how Syntrak can improve coaching efficiency across your ski school or academy.
             </p>
             <Link href="#roi-calculator" className="raycast-btn-light mt-6 inline-flex">
               Calculate ROI
@@ -96,7 +96,7 @@ export default function Enterprise() {
           <div className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[#0d0d0d] p-8">
             <h2 className="text-2xl font-medium text-[#f4f4f6]">Book a Demo</h2>
             <p className="mt-3 text-sm leading-relaxed text-[#9c9c9d]">
-              See Raycast in action with a personalized demo for your team.
+              See Syntrak in action with a personalised demo for your coaching team.
             </p>
             <Link href="#book-demo" className="raycast-btn-light mt-6 inline-flex">
               Schedule Demo

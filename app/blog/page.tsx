@@ -3,8 +3,8 @@ import RaycastPageShell from "@/components/raycast/RaycastPageShell";
 import RaycastBlogPage from "@/components/raycast/RaycastBlogPage";
 
 export const metadata: Metadata = {
-  title: "Raycast - Blog",
-  description: "News, product updates, and stories from the Raycast team.",
+  title: "Syntrak - Blog",
+  description: "News, product updates, and stories from the Syntrak team.",
 };
 
 export default function BlogPage() {

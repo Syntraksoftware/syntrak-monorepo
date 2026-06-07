@@ -16,7 +16,7 @@ function AppStoreCTA({ className = "" }: { className?: string }) {
   return (
     <Link href="/#download" className={`raycast-btn-light ${className}`.trim()}>
       <AppleIcon />
-      Get it today
+      Get the App
     </Link>
   );
 }
@@ -72,10 +72,10 @@ export default function RaycastIOSPage() {
               />
             </div>
             <h1>
-              Power of Raycast, <br />
-              now on iOS.
+              Power of Syntrak, <br />
+              in your pocket.
             </h1>
-            <p>AI, Notes, Snippets and Quicklinks always with you.</p>
+            <p>Coaching, session review, and progress tracking — always with you on the mountain.</p>
             <div className="ios-hero-ctas">
               <AppStoreCTA />
               <button type="button" className="ios-video-link">
@@ -86,7 +86,7 @@ export default function RaycastIOSPage() {
           <div className="ios-hero-media">
             <Image
               src={media("hero-screen.e61f4ba7.png")}
-              alt="Raycast for iOS home screen"
+              alt="Syntrak app home screen"
               width={420}
               height={860}
               priority
@@ -98,29 +98,29 @@ export default function RaycastIOSPage() {
 
       <FeatureSplit
         eyebrow="HOME"
-        title="Your home away from home"
-        description="Make Raycast yours by customizing your home with the content and actions you need most. And search is just a pull away."
+        title="Your mountain dashboard"
+        description="See your latest form score, session summary, and coaching history at a glance. Everything you need before your next run."
         image="home.8b38f543.png"
-        imageAlt="Raycast iOS home screen customization"
+        imageAlt="Syntrak app home screen"
       />
 
       <section className="ios-ai-section">
         <div className="ios-section-inner ios-feature-grid">
           <div className="ios-feature-copy">
-            <p className="ios-eyebrow">Raycast AI</p>
+            <p className="ios-eyebrow">AI Coaching</p>
             <h2>
-              One interface. <br />
-              Dozens of models.
+              One app. <br />
+              Every metric.
             </h2>
             <p>
-              The AI Chat and Commands you know and love, now synced and accessible across your
-              devices.
+              Real-time coaching and session review you know from the slopes, now synced and
+              accessible across your devices.
             </p>
             <Link href="/ai" className="ios-inline-link">
-              Explore Raycast AI
+              Explore AI Coaching
             </Link>
             <div className="ios-presets">
-              <p className="ios-presets-label">Presets</p>
+              <p className="ios-presets-label">Coaching Presets</p>
               <ul>
                 {iosPresets.map((preset) => (
                   <li key={preset}>{preset}</li>
@@ -131,7 +131,7 @@ export default function RaycastIOSPage() {
           <div className="ios-feature-media">
             <Image
               src={media("home-favorites.ed8e0cbb.png")}
-              alt="Raycast AI on iOS"
+              alt="Syntrak AI coaching on mobile"
               width={560}
               height={640}
               className="ios-feature-image"
@@ -141,81 +141,81 @@ export default function RaycastIOSPage() {
       </section>
 
       <FeatureSplit
-        eyebrow="Snippets"
-        title="Snippets"
-        description="Your essential information, ready to reuse. Store addresses, codes, and templates for quick access."
+        eyebrow="Sessions"
+        title="Session History"
+        description="Every run logged and ready to review. Distance, form scores, coaching cues, and key moments — all in one place."
         image="snippets.14354bd1.png"
-        imageAlt="Raycast Snippets on iOS"
+        imageAlt="Syntrak session history"
         reverse
       >
         <Link href="/pro" className="ios-inline-link">
-          Explore Snippets
+          Explore Pro
         </Link>
       </FeatureSplit>
 
       <FeatureSplit
-        eyebrow="Quicklinks"
-        title="Quicklinks"
-        description="Your most important resources organized and accessible. Just a tap away, wherever you are."
+        eyebrow="3D Playback"
+        title="3D Playback"
+        description="Replay any run in 3D from your phone. See your edge angles, body position, and turn shape from any angle."
         image="quicklinks.49c51e46.png"
-        imageAlt="Raycast Quicklinks on iOS"
+        imageAlt="Syntrak 3D playback on mobile"
       >
         <Link href="/pro" className="ios-inline-link">
-          Explore Quicklinks
+          Explore 3D Playback
         </Link>
       </FeatureSplit>
 
       <section className="ios-dictation-section">
         <div className="ios-section-inner ios-section-title ios-section-title-center">
-          <p className="ios-dictation-status">Listening...</p>
-          <h2>Voice Dictation with Whisper</h2>
-          <p>Talk to AI in over 50 languages with just a tap and hold.</p>
+          <p className="ios-dictation-status">Coaching active…</p>
+          <h2>Real-Time Audio Coaching</h2>
+          <p>Personalised cues stream to your earbuds in under 10 ms — fast enough to correct mid-turn.</p>
           <div className="ios-device-icons">
             <span>iPhone</span>
-            <span>Mac</span>
-            <span>iPad</span>
+            <span>Android</span>
+            <span>Earbuds</span>
           </div>
           <p className="ios-sync-note">
-            Keep your content synced across devices. Access all your AI chats, Notes, Snippets and
-            Quicklinks.
+            Keep your sessions synced across devices. Access coaching history, 3D playback, and
+            progress tracking everywhere.
           </p>
-          <p className="ios-pro-note">* Requires Raycast Pro</p>
+          <p className="ios-pro-note">* Requires Syntrak Pro</p>
         </div>
       </section>
 
       <FeatureSplit
-        eyebrow="Activity Sheet Extension"
-        title="Access Raycast from almost every app"
-        description="Use AI Commands on selected text."
+        eyebrow="Offline Mode"
+        title="Works without signal"
+        description="Start a session offline on the mountain. The app processes sensor data on-device once paired via Bluetooth."
         image="activity-sheet.f2f38f7d.png"
-        imageAlt="Raycast Activity Sheet on iOS"
+        imageAlt="Syntrak offline mode"
         reverse
       />
 
       <FeatureSplit
-        eyebrow="RAYCAST NOTES"
+        eyebrow="PROGRESS"
         title={
           <>
-            It&apos;s time to go all-in <br />
-            on Raycast Notes.
+            Track improvement <br />
+            season after season.
           </>
         }
-        description="Catch-up on past meeting notes while commuting or collect ideas while out touching grass."
+        description="See your form scores, edge angle consistency, and drill completion over time — and know exactly where you're improving."
         image="notes.24e64a4c.png"
-        imageAlt="Raycast Notes on iOS"
+        imageAlt="Syntrak progress tracking"
       >
         <Link href="/pro" className="ios-inline-link">
-          Explore Raycast Notes
+          Explore Progress Tracking
         </Link>
       </FeatureSplit>
 
       <section className="ios-keyboard-section">
         <div className="ios-section-inner ios-section-title ios-section-title-center">
-          <p className="ios-eyebrow">Custom Keyboard</p>
-          <h2>Available wherever you type.</h2>
+          <p className="ios-eyebrow">Quick Actions</p>
+          <h2>Available wherever you ski.</h2>
           <p>
-            Dictate messages with AI post-processing, run AI commands, share Quicklinks or reply
-            faster with Snippets.
+            Start a session, review your last run, or check your form score — from widgets,
+            shortcuts, or your Lock Screen.
           </p>
         </div>
       </section>
@@ -223,8 +223,8 @@ export default function RaycastIOSPage() {
       <section className="ios-integrations-section">
         <div className="ios-section-inner">
           <div className="ios-section-title ios-section-title-center">
-            <h2>Deeply integrated with iOS</h2>
-            <p>Designed to work well beyond the app icon. Raycast is integrated into many iOS features.</p>
+            <h2>Deeply integrated with your phone</h2>
+            <p>Designed to work beyond the app icon. Syntrak fits into the way you already use your devices.</p>
           </div>
           <div className="ios-integrations-grid">
             {iosIntegrations.map((item) => (
@@ -251,16 +251,16 @@ export default function RaycastIOSPage() {
       <section className="ios-hold-section">
         <div className="ios-section-inner ios-section-title ios-section-title-center">
           <h2>
-            Hold to <br />
-            Open Raycast
+            Tap to <br />
+            Start Coaching
           </h2>
         </div>
       </section>
 
       <section className="ios-final-cta">
         <div className="ios-section-inner ios-section-title ios-section-title-center">
-          <h2>Be more productive today and everyday.</h2>
-          <p>Download and use Raycast for iOS.</p>
+          <h2>Ski smarter today and every day.</h2>
+          <p>Download the Syntrak app — iOS 16+ and Android 12+.</p>
           <p className="ios-scan-label">Scan to Download</p>
           <div className="ios-qr-placeholder ios-qr-placeholder-center" aria-hidden="true">
             <Image src={media("app-icon.b57cf1c4.png")} alt="" width={48} height={48} className="ios-qr-icon" />
@@ -268,7 +268,7 @@ export default function RaycastIOSPage() {
           <div className="ios-hero-ctas ios-hero-ctas-center">
             <AppStoreCTA />
           </div>
-          <p className="ios-requirement">Requires iOS 18</p>
+          <p className="ios-requirement">Requires iOS 16+ or Android 12+</p>
         </div>
       </section>
 

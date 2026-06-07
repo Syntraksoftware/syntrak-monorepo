@@ -10,23 +10,23 @@ export default function RaycastHero() {
           See Every Movement. Master Every Run.
         </h1>
         <p className="mx-auto mt-5 max-w-[560px] text-lg leading-relaxed text-[#cdcdcd]">
-          AI powered biomechanical coaching, embedded invisibily in your base layer. Real time insights. Every turn, every mountain. 
+          AI-powered biomechanical coaching, embedded invisibly in your base layer. Real-time insights. Every turn, every mountain.
         </p>
 
         <div id="download" className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a href="#download" className="raycast-btn">
             <AppleIcon />
-            Download for Mac
+            Download for iOS
           </a>
           <a href="#download-windows" className="raycast-btn">
             <WindowsIcon />
-            Download for Windows (beta)
+            Download for Android
           </a>
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[13px] text-[#9c9c9d]">
-          <span>v0.0.1</span>
-          <span>macOS 13+</span>
+          <span>Founders Edition — Q4 2026</span>
+          <span>iOS 16+ · Android 12+</span>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ export default function RaycastHero() {
             <div className="h-3 w-3 rounded-full bg-[#ffc533]/80" />
             <div className="h-3 w-3 rounded-full bg-[#59d499]/80" />
             <div className="ml-3 flex-1 rounded-md border border-[#242728] bg-[#07080a] px-3 py-1.5 text-left text-sm text-[#9c9c9d]">
-              Search for apps and commands...
+              Live coaching session — Syntrak
             </div>
           </div>
           <div className="space-y-1 p-3">

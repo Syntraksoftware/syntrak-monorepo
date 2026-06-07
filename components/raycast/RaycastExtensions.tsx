@@ -4,48 +4,48 @@ import { templateExtension } from "./template-media";
 
 const extensions = [
   {
-    name: "Linear",
-    description: "Create, search and modify your issues without leaving your keyboard.",
+    name: "Real-Time Audio Coaching",
+    description: "Hear personalised cues through your earbuds as you ski — under 10 ms from sensor to sound.",
     icon: "linear-icon.png",
     image: "linear-web.png",
     gradient:
       "linear-gradient(138deg, rgba(32, 35, 91, 0.70) 22.00%, rgba(7, 9, 33, 0.70) 82.00%)",
   },
   {
-    name: "Google Translate",
-    description: "Use Google Translate to effortlessly translate into multiple languages",
+    name: "3D Motion Playback",
+    description: "Replay every run in 3D to see your form, edge angles, and body position from any angle.",
     icon: "google-translate-icon.png",
     image: "google-translate-web.png",
     gradient:
       "radial-gradient(94.21% 78.40% at 50.00% 29.91%, rgba(43, 94, 180, 0.70), rgba(13, 16, 35, 0.42))",
   },
   {
-    name: "Spotify",
-    description: "Search for music and podcasts, browse your library, and control playback.",
+    name: "Biomechanics Tracking",
+    description: "200+ embedded sensors capture movement patterns tuned for alpine skiing biomechanics.",
     icon: "spotify-icon.png",
     image: "spotify-web.png",
     gradient:
       "radial-gradient(30.00% 40.00% at 52.00% 36.91%, rgba(13, 110, 48, 1.00), rgba(8, 53, 24, 1.00))",
   },
   {
-    name: "Arc",
-    description: "Navigate your open tabs or search through your browser history.",
+    name: "Edge Angle Analysis",
+    description: "Measure edge angle consistency and centre-of-mass tracking to refine your technique.",
     icon: "arc-icon.png",
     image: "arc-web.png",
     gradient:
       "radial-gradient(50% 50% at 50% 50%, rgba(255, 99, 99, 0.35), rgba(7, 8, 10, 0.9))",
   },
   {
-    name: "Slack",
-    description: "Set your presence, see unread messages and search your chats.",
+    name: "Session Summaries",
+    description: "Get daily summaries after every session — distance, form scores, and key moments to review.",
     icon: "slack-icon.png",
     image: "slack-web.png",
     gradient:
       "linear-gradient(135deg, rgba(74, 21, 75, 0.8) 0%, rgba(20, 10, 30, 0.9) 100%)",
   },
   {
-    name: "Notion",
-    description: "The fastest way to search and create Notion pages.",
+    name: "Drill Recommendations",
+    description: "Receive personalised training drills based on your skiing style, skill level, and progress.",
     icon: "notion-icon.png",
     image: "notion-web.png",
     gradient:
@@ -53,15 +53,15 @@ const extensions = [
   },
 ];
 
-const categories = ["Productivity", "Engineering", "Design", "Writing"];
+const categories = ["Coaching", "Analysis", "Training", "Progress"];
 
 export default function RaycastExtensions() {
   return (
     <section id="store" className="py-20 md:py-24">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-8">
         <div className="raycast-section-title max-w-[640px]">
-          <h2>There&apos;s an extension for that.</h2>
-          <p>Use your favorite tools without even opening them.</p>
+          <h2>Everything you need to ski better.</h2>
+          <p>From real-time cues to post-run analysis — all built into one smart thermal.</p>
         </div>
 
         <div className="mt-8 inline-flex rounded-full border border-[#242728] bg-[#0d0d0d] p-1">
@@ -129,7 +129,7 @@ export default function RaycastExtensions() {
         </div>
 
         <p className="mt-8 text-center text-lg font-medium text-[#9c9c9d]">
-          Plus thousands more...
+          And more coming in 2027 — snowboard, trail-running, and cycling.
         </p>
       </div>
     </section>

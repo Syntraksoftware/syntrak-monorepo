@@ -1,10 +1,10 @@
 import { AppleIcon } from "./icons";
 
 const featureKeys = [
-  { label: "Fast.", text: "Think in milliseconds." },
-  { label: "Ergonomic.", text: "Keyboard First." },
-  { label: "Native.", text: "Pure performance." },
-  { label: "Reliable.", text: "99.8% crash-free rate." },
+  { label: "Fast.", text: "Under 10 ms from sensor to cue." },
+  { label: "Invisible.", text: "Embedded in your base layer." },
+  { label: "Durable.", text: "97.7% reliable after 7+ washes." },
+  { label: "Accurate.", text: "93.4% exercise-classification accuracy." },
 ];
 
 const row1 = ["esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"];
@@ -20,12 +20,12 @@ export default function RaycastFeatures() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <div className="raycast-section-title">
-              <h2>It&apos;s not about saving time.</h2>
-              <p>It&apos;s about feeling like you&apos;re never wasting it.</p>
+              <h2>It&apos;s not about more gear.</h2>
+              <p>It&apos;s about coaching that moves with you — invisible, always on, and built into what you already wear.</p>
             </div>
             <a href="#download" className="raycast-btn mt-8">
               <AppleIcon />
-              Download
+              Get the App
             </a>
           </div>
 

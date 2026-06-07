@@ -26,11 +26,11 @@ export default function RaycastProModels() {
     <section className="pro-models-section">
       <div className="pro-section-inner">
         <div className="pro-section-title pro-section-title-center">
-          <h2>One Interface.</h2>
-          <p>Dozens of models.</p>
+          <h2>One garment.</h2>
+          <p>200+ sensors.</p>
           <p className="pro-section-copy">
-            Choose a <em>faster</em> model when speed matters and a smarter one for more complex
-            tasks.
+            Every sensor feeds into coaching models tuned for <em>alpine skiing biomechanics</em> —
+            from edge angles to centre-of-mass tracking.
           </p>
         </div>
 
