@@ -15,7 +15,7 @@ export default function RaycastSignInForm() {
 
   return (
     <div className="sign-in-card">
-      <h1>Log in to Raycast</h1>
+      <h1>Log in to Syntrak</h1>
 
       {submitted ? (
         <p className="sign-in-success">

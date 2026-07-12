@@ -3705,9 +3705,9 @@ body:has(.raycast-site)::after {
 .ios-rc-hero {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 12px;
   align-items: center;
-  padding: 120px 16px 32px;
+  padding: 140px 16px 48px;
   text-align: center;
   border-bottom: 1px solid #1c1c1c;
 }
@@ -3726,6 +3726,7 @@ body:has(.raycast-site)::after {
 
 .ios-rc-hero > p {
   max-width: 420px;
+  margin: 0;
   font-size: 18px;
   line-height: 1.5;
   color: #cdcdcd;
@@ -3748,71 +3749,6 @@ body:has(.raycast-site)::after {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-.ios-rc-hero-image-wrap {
-  position: relative;
-  z-index: 0;
-  width: calc(100% + 32px);
-  height: 280px;
-  margin: 0 -16px 8px;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.ios-rc-placeholder-hero-screen {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: min(100%, 300px);
-  height: 360px;
-  border-radius: 32px;
-  transform: translateX(-50%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 45%, transparent 100%);
-  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 45%, transparent 100%);
-}
-
-.ios-rc-hero-app-icon-wrap {
-  position: absolute;
-  bottom: 48px;
-  left: 50%;
-  z-index: 1;
-  display: none;
-  width: 108px;
-  height: 108px;
-  transform: translateX(-50%);
-}
-
-.ios-rc-hero-app-icon {
-  position: relative;
-  z-index: 1;
-  width: 108px;
-  height: 108px;
-  border-radius: 24px;
-}
-
-.ios-rc-hero-app-icon-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-  width: 132px;
-  height: 132px;
-  background: radial-gradient(circle, rgba(255, 99, 99, 0.22) 0%, transparent 70%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(12px);
-}
-
-.ios-rc-hero-copy {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  width: 100%;
-  padding-top: 8px;
 }
 
 .ios-rc-home-graphic-wrap,
@@ -4473,26 +4409,6 @@ body:has(.raycast-site)::after {
 
   .ios-rc-section-title p {
     font-size: 18px;
-  }
-
-  .ios-rc-hero-image-wrap {
-    height: 420px;
-    margin-bottom: 16px;
-  }
-
-  .ios-rc-placeholder-hero-screen {
-    bottom: 0;
-    width: min(100%, 420px);
-    height: 420px;
-  }
-
-  .ios-rc-hero-app-icon-wrap {
-    bottom: 72px;
-    display: block;
-  }
-
-  .ios-rc-hero-copy {
-    padding-top: 16px;
   }
 
   .ios-rc-placeholder-home,

@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   RaycastIOSActionButtonGraphic,
@@ -122,21 +121,6 @@ export default function RaycastIOSPage() {
       <RaycastIOSFloatingQR />
 
       <section className="ios-rc-hero">
-        <div className="ios-rc-hero-image-wrap">
-          <div className="ios-rc-placeholder ios-rc-placeholder-hero-screen" aria-hidden="true" />
-          <div className="ios-rc-hero-app-icon-wrap" aria-hidden="true">
-            <div className="ios-rc-hero-app-icon-glow" />
-            <Image
-              src="/logos/white_logo.png"
-              alt=""
-              width={108}
-              height={108}
-              className="ios-rc-hero-app-icon"
-              priority
-            />
-          </div>
-        </div>
-        <div className="ios-rc-hero-copy">
         <h1>
           Power of Syntrak, <br />
           now on iOS.
@@ -150,7 +134,6 @@ export default function RaycastIOSPage() {
           <button type="button" className="ios-rc-video-link">
             Watch Video
           </button>
-        </div>
         </div>
       </section>
 
